@@ -1,0 +1,41 @@
+services:
+  postgres:
+    image: postgres:16
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: mathora
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  api:
+    build:
+      context: ../apps/api
+      dockerfile: Dockerfile
+    depends_on:
+      - postgres
+    ports:
+      - "4000:4000"
+    environment:
+      DATABASE_URL: postgresql://postgres:postgres@postgres:5432/mathora
+      PORT: 4000
+      JWT_ACCESS_SECRET: replace-with-at-least-32-characters
+      JWT_REFRESH_SECRET: replace-with-at-least-32-characters
+      CORS_ORIGIN: http://localhost:3000
+
+  web:
+    build:
+      context: ../apps/web
+      dockerfile: Dockerfile
+    depends_on:
+      - api
+    ports:
+      - "3000:3000"
+    environment:
+      NEXT_PUBLIC_API_URL: http://localhost:4000/api
+
+volumes:
+  postgres_data:

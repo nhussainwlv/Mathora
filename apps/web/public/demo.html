@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mathora Demo (Static HTML)</title>
+    <style>
+      :root {
+        font-family: Inter, Arial, sans-serif;
+        color: #0f172a;
+        background: linear-gradient(135deg, #dbeafe, #eef2ff, #ede9fe);
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 1rem;
+      }
+      .card {
+        width: min(860px, 100%);
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(8px);
+        border-radius: 1rem;
+        padding: 1.25rem;
+        box-shadow: 0 20px 40px rgba(15, 23, 42, 0.15);
+      }
+      h1 {
+        margin-top: 0;
+      }
+      .grid {
+        display: grid;
+        gap: 0.75rem;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      }
+      .pill {
+        border-radius: 0.75rem;
+        padding: 0.75rem;
+        background: #eef2ff;
+      }
+      code {
+        background: #e2e8f0;
+        padding: 0.1rem 0.35rem;
+        border-radius: 0.3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <h1>Mathora (Static Demo)</h1>
+      <p>
+        This is a plain HTML demo page that runs instantly. For the full PWA app, run
+        <code>npm run dev:web</code> in the project root.
+      </p>
+      <div class="grid">
+        <div class="pill">KS1: Counting, Addition, Shapes</div>
+        <div class="pill">KS2: Multiplication, Division, Fractions</div>
+        <div class="pill">KS3: Algebra, Ratios, Graphs</div>
+        <div class="pill">KS4: Trigonometry, Quadratics, Vectors</div>
+      </div>
+      <p style="margin-top: 1rem">
+        Open full app routes after running web dev server:
+        <code>http://localhost:3000/student</code>
+      </p>
+    </main>
+  </body>
+</html>

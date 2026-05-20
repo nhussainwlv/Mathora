@@ -1,0 +1,261 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserRole {
+  STUDENT
+  TEACHER
+  ADMIN
+  PARENT
+}
+
+enum Difficulty {
+  BEGINNER
+  INTERMEDIATE
+  ADVANCED
+}
+
+enum AssignmentStatus {
+  DRAFT
+  PUBLISHED
+  CLOSED
+}
+
+model User {
+  id                 String                 @id @default(cuid())
+  email              String                 @unique
+  passwordHash       String
+  role               UserRole
+  isEmailVerified    Boolean                @default(false)
+  createdAt          DateTime               @default(now())
+  updatedAt          DateTime               @updatedAt
+  profile            Profile?
+  refreshSessions    RefreshSession[]
+  verificationTokens VerificationToken[]
+  resetTokens        PasswordResetToken[]
+  studentProgress    StudentProgress[]
+  attempts           QuestionAttempt[]
+  achievements       UserAchievement[]
+  classroomsOwned    Classroom[]            @relation("TeacherClassrooms")
+  enrollments        ClassroomEnrollment[]
+  parentLinks        ParentStudentLink[]    @relation("ParentLinks")
+  childLinks         ParentStudentLink[]    @relation("StudentLinks")
+  assignmentsCreated Assignment[]           @relation("AssignmentCreator")
+  submissions        AssignmentSubmission[]
+}
+
+model Profile {
+  id            String   @id @default(cuid())
+  userId        String   @unique
+  displayName   String
+  avatarUrl     String?
+  keyStage      String?
+  foundationOrHigher String?
+  xp            Int      @default(0)
+  coins         Int      @default(0)
+  level         Int      @default(1)
+  streakDays    Int      @default(0)
+  weeklyGoalMin Int      @default(120)
+  accuracyPct   Float    @default(0)
+  studyMinutes  Int      @default(0)
+  rankLabel     String   @default("Rookie")
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model RefreshSession {
+  id           String   @id @default(cuid())
+  userId       String
+  tokenHash    String
+  userAgent    String?
+  ipAddress    String?
+  expiresAt    DateTime
+  createdAt    DateTime @default(now())
+  revokedAt    DateTime?
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+  id        String   @id @default(cuid())
+  userId    String
+  tokenHash String
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+  usedAt    DateTime?
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model PasswordResetToken {
+  id        String   @id @default(cuid())
+  userId    String
+  tokenHash String
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+  usedAt    DateTime?
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model ParentStudentLink {
+  id        String   @id @default(cuid())
+  parentId  String
+  studentId String
+  createdAt DateTime @default(now())
+  parent    User     @relation("ParentLinks", fields: [parentId], references: [id], onDelete: Cascade)
+  student   User     @relation("StudentLinks", fields: [studentId], references: [id], onDelete: Cascade)
+
+  @@unique([parentId, studentId])
+}
+
+model KeyStagePath {
+  id          String       @id @default(cuid())
+  keyStage    String
+  track       String
+  title       String
+  description String
+  skills      Skill[]
+}
+
+model Skill {
+  id           String            @id @default(cuid())
+  keyStagePathId String
+  name         String
+  slug         String            @unique
+  topic        String
+  difficulty   Difficulty
+  orderIndex   Int
+  unlockXp     Int               @default(0)
+  questions    Question[]
+  flashcards   Flashcard[]
+  progressRows StudentProgress[]
+  keyStagePath KeyStagePath      @relation(fields: [keyStagePathId], references: [id], onDelete: Cascade)
+}
+
+model StudentProgress {
+  id             String   @id @default(cuid())
+  userId         String
+  skillId        String
+  masteryPct     Float    @default(0)
+  completed      Boolean  @default(false)
+  attemptsCount  Int      @default(0)
+  lastStudiedAt  DateTime?
+  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  skill          Skill    @relation(fields: [skillId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, skillId])
+}
+
+model Question {
+  id            String            @id @default(cuid())
+  skillId        String
+  prompt        String
+  answer        String
+  optionsJson   Json?
+  explanation   String
+  difficulty    Difficulty
+  tags          String[]
+  createdAt     DateTime          @default(now())
+  attempts      QuestionAttempt[]
+  skill         Skill             @relation(fields: [skillId], references: [id], onDelete: Cascade)
+}
+
+model QuestionAttempt {
+  id             String   @id @default(cuid())
+  userId         String
+  questionId     String
+  isCorrect      Boolean
+  responseTimeMs Int
+  createdAt      DateTime @default(now())
+  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  question       Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+}
+
+model Flashcard {
+  id            String      @id @default(cuid())
+  skillId       String
+  frontText     String
+  backText      String
+  hint          String?
+  difficulty    Difficulty
+  createdAt     DateTime    @default(now())
+  skill         Skill       @relation(fields: [skillId], references: [id], onDelete: Cascade)
+}
+
+model Achievement {
+  id          String            @id @default(cuid())
+  code        String            @unique
+  name        String
+  description String
+  xpReward    Int               @default(0)
+  coinReward  Int               @default(0)
+  users       UserAchievement[]
+}
+
+model UserAchievement {
+  id            String      @id @default(cuid())
+  userId        String
+  achievementId String
+  earnedAt      DateTime    @default(now())
+  user          User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  achievement   Achievement @relation(fields: [achievementId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, achievementId])
+}
+
+model Classroom {
+  id          String                @id @default(cuid())
+  teacherId   String
+  name        String
+  keyStage    String
+  createdAt   DateTime              @default(now())
+  teacher     User                  @relation("TeacherClassrooms", fields: [teacherId], references: [id], onDelete: Cascade)
+  enrollments ClassroomEnrollment[]
+  assignments Assignment[]
+}
+
+model ClassroomEnrollment {
+  id          String    @id @default(cuid())
+  classroomId String
+  userId      String
+  joinedAt    DateTime  @default(now())
+  classroom   Classroom @relation(fields: [classroomId], references: [id], onDelete: Cascade)
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([classroomId, userId])
+}
+
+model Assignment {
+  id          String                @id @default(cuid())
+  classroomId String
+  createdById String
+  title       String
+  instructions String
+  dueAt       DateTime
+  status      AssignmentStatus      @default(DRAFT)
+  createdAt   DateTime              @default(now())
+  classroom   Classroom             @relation(fields: [classroomId], references: [id], onDelete: Cascade)
+  createdBy   User                  @relation("AssignmentCreator", fields: [createdById], references: [id], onDelete: Cascade)
+  submissions AssignmentSubmission[]
+}
+
+model AssignmentSubmission {
+  id            String     @id @default(cuid())
+  assignmentId  String
+  studentId     String
+  score         Float?
+  submittedAt   DateTime   @default(now())
+  feedback      String?
+  assignment    Assignment @relation(fields: [assignmentId], references: [id], onDelete: Cascade)
+  student       User       @relation(fields: [studentId], references: [id], onDelete: Cascade)
+}
+
+model AnalyticsEvent {
+  id          String   @id @default(cuid())
+  userId      String?
+  eventType   String
+  payloadJson Json
+  createdAt   DateTime @default(now())
+}

@@ -1,0 +1,13 @@
+{
+  "name": "@mathora/ui",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.tsx",
+  "scripts": {
+    "test": "echo \"No tests for UI package\""
+  },
+  "peerDependencies": {
+    "react": "^19.0.0"
+  }
+}
