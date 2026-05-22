@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#4f46e5" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <script src="/js/theme.js"></script>
+    <title>Student Hub — Mathora</title>
+  </head>
+  <body>
+    <div id="page-content">
+      <div id="student-dashboard">
+        <section class="grid-4">
+          <div class="card"><p class="metric-label">XP Points</p><p class="metric-value" data-xp>2,480</p></div>
+          <div class="card"><p class="metric-label">Current Level</p><p class="metric-value">12</p></div>
+          <div class="card"><p class="metric-label">Daily Streak</p><p class="metric-value">14 days</p></div>
+          <div class="card"><p class="metric-label">Accuracy</p><p class="metric-value">87.4%</p></div>
+        </section>
+        <div class="btn-row">
+          <button type="button" class="btn btn-primary btn-sm" data-daily>Complete daily challenge</button>
+          <button type="button" class="btn btn-dark btn-sm" data-refresh>Refresh recommendations</button>
+          <button type="button" class="btn btn-primary btn-sm" data-reward style="background:#059669;">Claim login reward</button>
+        </div>
+        <section class="grid-2 lg-2">
+          <div class="card col-span-2">
+            <h3>Weekly Progress</h3>
+            <div class="bar-chart" data-chart aria-label="Weekly progress chart"></div>
+          </div>
+          <div class="card">
+            <h3>Achievements</h3>
+            <ul class="list-stack">
+              <li class="list-item badge-emerald">7-Day Scholar</li>
+              <li class="list-item badge-blue">Fraction Master</li>
+              <li class="list-item badge-purple">Speed Maths Hero</li>
+            </ul>
+            <p class="message">Coins: <span data-coins>120</span></p>
+          </div>
+        </section>
+        <p class="message" data-message></p>
+      </div>
+    </div>
+    <script>window.MATHORA_ACTIVE = "/student/";</script>
+    <script src="/js/shell.js"></script>
+    <script src="/js/student-dashboard.js"></script>
+    <script src="/js/pwa.js"></script>
+  </body>
+</html>

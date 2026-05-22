@@ -7,11 +7,11 @@ Mathora is a full-stack EdTech platform for UK maths learning (KS1-KS4) with:
 - curriculum pathways and topic progression
 - flashcards, quizzes, and gamified progress tracking
 - teacher/admin/parent dashboards
-- modern Next.js frontend and Express + Prisma backend
+- static HTML/CSS/JS PWA frontend and Express + Prisma backend
 
 ## High-level architecture
 
-- Frontend: `apps/web` (Next.js App Router + Tailwind)
+- Frontend: `apps/web/public` (HTML, CSS, vanilla JS, service worker + manifest)
 - Backend: `apps/api` (Express + TypeScript + Prisma)
 - Database: PostgreSQL
 - Shared packages:
@@ -43,11 +43,10 @@ Mathora is a full-stack EdTech platform for UK maths learning (KS1-KS4) with:
 
 ## Main frontend sections
 
-- `/` marketing/landing
-- `/auth/signin`, `/auth/signup`, `/auth/verify`, `/auth/reset`
-- `/student`, `/student/learn`, `/student/flashcards`, `/student/games`
-- `/teacher`
-- `/admin`
+- `/` marketing/landing (`index.html`)
+- `/auth/signin.html`, `/auth/signup.html`, `/auth/verify.html`, `/auth/reset.html`
+- `/student/`, `/student/learn.html`, `/student/flashcards.html`, `/student/games.html`
+- `/teacher/`, `/admin/`, `/parent/`
 - `/parent`
 - `/offline` (PWA fallback)
 

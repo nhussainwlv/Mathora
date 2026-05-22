@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#4f46e5" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <script src="/js/theme.js"></script>
+    <title>Reset password — Mathora</title>
+  </head>
+  <body class="app-gradient">
+    <main class="auth-page">
+      <h1>Reset password</h1>
+      <form id="reset-form" class="auth-form">
+        <input class="input" type="email" name="email" placeholder="Account email" required />
+        <button class="btn btn-primary btn-block" type="submit">Send reset link</button>
+      </form>
+      <p class="message" data-auth-message></p>
+    </main>
+    <script src="/js/config.js"></script>
+    <script src="/js/api.js"></script>
+    <script src="/js/auth.js"></script>
+    <script src="/js/pwa.js"></script>
+  </body>
+</html>

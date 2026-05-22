@@ -3,7 +3,7 @@
 Mathora is a production-oriented educational web platform for UK KS1-KS4 maths learners with gamification, adaptive revision, and role-based portals for students, teachers, admins, and parents.
 
 ## Tech Stack
-- **Frontend:** Next.js, React, Tailwind CSS, React Query, Zustand, Framer Motion, Recharts
+- **Frontend:** Static HTML, CSS, and JavaScript (installable PWA)
 - **Backend:** Node.js, Express, Prisma
 - **Database:** PostgreSQL
 - **Auth:** JWT access + refresh sessions, Argon2 password hashing
@@ -20,7 +20,7 @@ Mathora is a production-oriented educational web platform for UK KS1-KS4 maths l
 1. Copy env templates:
    - `cp .env.example .env`
    - `cp apps/api/.env.example apps/api/.env`
-   - `cp apps/web/.env.example apps/web/.env.local`
+   - Optional: copy `apps/web/.env.example` if you customize API URL in `public/js/config.js`
 2. Start PostgreSQL:
    - `docker compose -f infra/docker-compose.yml up -d postgres`
 3. Install dependencies:

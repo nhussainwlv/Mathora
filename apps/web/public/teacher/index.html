@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#4f46e5" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <script src="/js/theme.js"></script>
+    <title>Teacher — Mathora</title>
+  </head>
+  <body>
+    <div id="page-content">
+      <div id="teacher-page">
+        <h2>Teacher Workspace</h2>
+        <div class="grid-2 lg-2">
+          <form class="card" data-classroom-form>
+            <h3>Create classroom</h3>
+            <input class="input" name="classroomName" placeholder="Classroom name" />
+            <button type="submit" class="btn btn-primary btn-sm">Create</button>
+          </form>
+          <form class="card" data-assignment-form>
+            <h3>Assign homework</h3>
+            <input class="input" name="assignmentTitle" placeholder="Assignment title" />
+            <button type="submit" class="btn btn-primary btn-sm">Publish</button>
+          </form>
+        </div>
+        <div class="grid-2 lg-2">
+          <div class="card">
+            <h3>Classrooms</h3>
+            <ul class="list-stack" data-classrooms></ul>
+          </div>
+          <div class="card">
+            <h3>Assignments</h3>
+            <ul class="list-stack" data-assignments></ul>
+          </div>
+        </div>
+        <p class="message" data-message></p>
+      </div>
+    </div>
+    <script>window.MATHORA_ACTIVE = "/teacher/";</script>
+    <script src="/js/shell.js"></script>
+    <script src="/js/teacher.js"></script>
+    <script src="/js/pwa.js"></script>
+  </body>
+</html>

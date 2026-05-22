@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#4f46e5" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <script src="/js/theme.js"></script>
+    <title>Admin — Mathora</title>
+  </head>
+  <body>
+    <div id="page-content">
+      <div id="admin-page">
+        <h2>Admin Control Center</h2>
+        <div class="grid-2 lg-2">
+          <div class="card">
+            <h3>Manage users</h3>
+            <ul class="list-stack" data-users></ul>
+          </div>
+          <form class="card" data-question-form>
+            <h3>Question bank CRUD</h3>
+            <input class="input" name="question" placeholder="Add a new maths question" />
+            <button type="submit" class="btn btn-primary btn-sm">Add question</button>
+            <ul class="list-stack" data-bank style="margin-top:0.75rem;"></ul>
+          </form>
+        </div>
+        <div class="grid-3">
+          <button type="button" class="card card-hover" data-panel="Subject management">Subject management</button>
+          <button type="button" class="card card-hover" data-panel="Content uploads">Content uploads</button>
+          <button type="button" class="card card-hover" data-panel="Leaderboard config">Leaderboard config</button>
+        </div>
+        <p class="message" data-message></p>
+      </div>
+    </div>
+    <script>window.MATHORA_ACTIVE = "/admin/";</script>
+    <script src="/js/shell.js"></script>
+    <script src="/js/admin.js"></script>
+    <script src="/js/pwa.js"></script>
+  </body>
+</html>

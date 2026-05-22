@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#4f46e5" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <script src="/js/theme.js"></script>
+    <title>Parent — Mathora</title>
+  </head>
+  <body>
+    <div id="page-content">
+      <div id="parent-page">
+        <h2>Parent Monitoring Hub</h2>
+        <div class="card message">
+          Monitor child progress, streaks, weak topics, and weekly study goals. Receive reminders and alerts for
+          overdue assignments.
+        </div>
+        <div class="pill-row" data-children></div>
+        <div class="grid-3">
+          <div class="card"><p class="metric-label">Accuracy</p><p class="metric-value" data-accuracy></p></div>
+          <div class="card"><p class="metric-label">Streak</p><p class="metric-value" data-streak></p></div>
+          <div class="card"><p class="metric-label">Weak Topic</p><p class="metric-value" data-weak></p></div>
+        </div>
+        <div class="grid-3">
+          <button type="button" class="card card-hover" data-feature="Open study planner">Open study planner</button>
+          <button type="button" class="card card-hover" data-feature="Sync with calendar">Sync with calendar</button>
+          <button type="button" class="card card-hover" data-feature="Generate printable cards">Generate printable cards</button>
+        </div>
+        <p class="message" data-message></p>
+      </div>
+    </div>
+    <script>window.MATHORA_ACTIVE = "/parent/";</script>
+    <script src="/js/shell.js"></script>
+    <script src="/js/parent.js"></script>
+    <script src="/js/pwa.js"></script>
+  </body>
+</html>

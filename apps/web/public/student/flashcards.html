@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#4f46e5" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <script src="/js/theme.js"></script>
+    <title>Flashcards — Mathora</title>
+  </head>
+  <body>
+    <div id="page-content">
+      <div id="flashcards-page">
+        <div class="card message">
+          Timed recall: 20s | Mode: Spaced repetition | Smart suggestion: revisit algebra basics
+        </div>
+        <button type="button" class="flashcard" data-card aria-label="Flip flashcard"></button>
+        <p class="message" data-hint></p>
+        <div class="btn-row">
+          <button type="button" class="btn btn-dark btn-sm" data-prev>Swipe Left</button>
+          <button type="button" class="btn btn-primary btn-sm" data-next>Swipe Right</button>
+          <button type="button" class="btn btn-outline btn-sm" data-favourite>Add favourite</button>
+        </div>
+      </div>
+    </div>
+    <script>window.MATHORA_ACTIVE = "/student/flashcards.html";</script>
+    <script src="/js/shell.js"></script>
+    <script src="/js/flashcards.js"></script>
+    <script src="/js/pwa.js"></script>
+  </body>
+</html>

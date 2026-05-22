@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#4f46e5" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <script src="/js/theme.js"></script>
+    <title>Learn — Mathora</title>
+  </head>
+  <body>
+    <div id="page-content">
+      <div id="learn-page">
+        <h2>Key Stage Learning Paths</h2>
+        <p class="message">Simplified learning flow: choose topic, study revision notes, then complete quiz.</p>
+        <div class="pill-row" data-stages></div>
+        <div class="card">
+          <h3 data-stage-title>Topics</h3>
+          <ul class="list-stack" data-topics></ul>
+        </div>
+        <div class="card" data-topic-detail></div>
+        <div class="card" data-quiz></div>
+        <div class="card">
+          <h4>Content references</h4>
+          <ul class="list-stack" data-sources></ul>
+        </div>
+        <p class="message" data-message></p>
+      </div>
+    </div>
+    <script>window.MATHORA_ACTIVE = "/student/learn.html";</script>
+    <script src="/js/shell.js"></script>
+    <script type="module" src="/js/learn.js"></script>
+    <script src="/js/pwa.js"></script>
+  </body>
+</html>
