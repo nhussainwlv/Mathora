@@ -1,0 +1,31 @@
+# Render Blueprint — connect repo: https://github.com/nhussainwlv/Mathora
+# Dashboard: New → Blueprint → select this repo (or New Web Service manually)
+services:
+  - type: web
+    name: mathora-api
+    runtime: node
+    plan: free
+    buildCommand: >-
+      npm install &&
+      npm run build --workspace api &&
+      cd apps/api &&
+      npx prisma generate &&
+      npx prisma db push &&
+      npx prisma db seed
+    startCommand: npm run start --workspace api
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        value: file:./prisma/dev.db
+      - key: PORT
+        value: "4000"
+      - key: JWT_ACCESS_SECRET
+        generateValue: true
+      - key: JWT_REFRESH_SECRET
+        generateValue: true
+      - key: CORS_ORIGIN
+        sync: false
+      - key: APP_BASE_URL
+        sync: false

@@ -34,6 +34,13 @@ app.use(
         callback(null, true);
         return;
       }
+      if (
+        env.NODE_ENV === "production" &&
+        (origin.endsWith(".vercel.app") || origin.endsWith(".vercel.dev"))
+      ) {
+        callback(null, true);
+        return;
+      }
       callback(new Error("Not allowed by CORS"));
     },
     credentials: true,
