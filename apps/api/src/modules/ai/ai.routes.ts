@@ -1,5 +1,6 @@
 import { Router } from "express";
 import { z } from "zod";
+import { generateMathChatReply } from "./math-chat.service.js";
 
 const aiRouter = Router();
 
@@ -33,6 +34,34 @@ aiRouter.post("/practice", (req, res) => {
     return res.status(400).json({ message: "Invalid practice generation request" });
   }
   return res.json({ practiceQuestion: generatePracticeVariant(payload.data.prompt) });
+});
+
+aiRouter.post("/chat", async (req, res, next) => {
+  const schema = z.object({
+    message: z.string().min(1).max(2000),
+    history: z
+      .array(
+        z.object({
+          role: z.enum(["user", "assistant"]),
+          content: z.string().max(4000),
+        }),
+      )
+      .max(12)
+      .default([]),
+  });
+  const payload = schema.safeParse(req.body);
+  if (!payload.success) {
+    return res.status(400).json({ message: "Invalid chat request" });
+  }
+  try {
+    const { reply, provider } = await generateMathChatReply(
+      payload.data.history,
+      payload.data.message,
+    );
+    return res.json({ reply, provider });
+  } catch (error) {
+    return next(error);
+  }
 });
 
 export { aiRouter };

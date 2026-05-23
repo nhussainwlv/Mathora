@@ -6,43 +6,103 @@
     <meta name="theme-color" content="#4f46e5" />
     <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Mathora" />
     <link rel="stylesheet" href="/css/main.css" />
+    <script src="/js/config.js"></script>
     <script src="/js/theme.js"></script>
-    <title>Student Hub — Mathora</title>
+    <title>Dashboard — Mathora</title>
   </head>
   <body>
     <div id="page-content">
       <div id="student-dashboard">
-        <section class="grid-4">
-          <div class="card"><p class="metric-label">XP Points</p><p class="metric-value" data-xp>2,480</p></div>
-          <div class="card"><p class="metric-label">Current Level</p><p class="metric-value">12</p></div>
-          <div class="card"><p class="metric-label">Daily Streak</p><p class="metric-value">14 days</p></div>
-          <div class="card"><p class="metric-label">Accuracy</p><p class="metric-value">87.4%</p></div>
+        <header class="dash-header">
+          <div>
+            <h1 class="dash-title">Dashboard</h1>
+            <p class="dash-welcome" data-welcome>Sign in to sync your progress and unlock the AI tutor.</p>
+          </div>
+        </header>
+
+        <section class="grid-4" aria-label="Your stats">
+          <div class="card"><p class="metric-label">XP Points</p><p class="metric-value" data-xp>0</p></div>
+          <div class="card"><p class="metric-label">Current Level</p><p class="metric-value" data-level>1</p></div>
+          <div class="card"><p class="metric-label">Questions saved</p><p class="metric-value" data-solved-total>0</p></div>
+          <div class="card"><p class="metric-label">Accuracy</p><p class="metric-value" data-accuracy>—</p></div>
         </section>
+
         <div class="btn-row">
-          <button type="button" class="btn btn-primary btn-sm" data-daily>Complete daily challenge</button>
-          <button type="button" class="btn btn-dark btn-sm" data-refresh>Refresh recommendations</button>
-          <button type="button" class="btn btn-primary btn-sm" data-reward style="background:#059669;">Claim login reward</button>
+          <a class="btn btn-primary btn-sm" href="/student/games.html">Play maths games</a>
+          <button type="button" class="btn btn-dark btn-sm" data-refresh>Refresh progress</button>
+          <a class="btn btn-outline btn-sm" href="/student/learn.html">Study topics</a>
         </div>
+
+        <section class="dash-features" aria-label="Quick links" data-feature-links>
+          <a class="dash-feature-card" href="/student/learn.html">
+            <h3>Learn</h3>
+            <p>KS1–KS4 topics, guides, and quizzes</p>
+          </a>
+          <a class="dash-feature-card" href="/student/games.html">
+            <h3>Games</h3>
+            <p>Four levels, unlimited questions</p>
+          </a>
+          <a class="dash-feature-card" href="/student/flashcards.html">
+            <h3>Flashcards</h3>
+            <p>Quick revision by key stage</p>
+          </a>
+          <p class="dash-feature-card dash-feature-card--static">
+            <h3>AI tutor</h3>
+            <p data-ai-hint>Use the purple button when signed in</p>
+          </p>
+        </section>
+
         <section class="grid-2 lg-2">
           <div class="card col-span-2">
             <h3>Weekly Progress</h3>
             <div class="bar-chart" data-chart aria-label="Weekly progress chart"></div>
           </div>
           <div class="card">
-            <h3>Achievements</h3>
-            <ul class="list-stack">
-              <li class="list-item badge-emerald">7-Day Scholar</li>
-              <li class="list-item badge-blue">Fraction Master</li>
-              <li class="list-item badge-purple">Speed Maths Hero</li>
+            <h3>Your stats</h3>
+            <ul class="list-stack" data-stats-list>
+              <li class="list-item">Sign in to sync XP and solved questions</li>
+              <li class="list-item">Games: 4 levels — unlimited questions</li>
+              <li class="list-item">Learn: 10-question quiz on every topic</li>
             </ul>
-            <p class="message">Coins: <span data-coins>120</span></p>
+            <p class="message">Coins: <span data-coins>0</span></p>
           </div>
         </section>
         <p class="message" data-message></p>
       </div>
+      <footer class="landing-footer landing-footer-in-app">
+        <a
+          href="https://www.instagram.com/adrianjamesash/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="landing-credit landing-credit--premium"
+          aria-label="Built with love by Adrian on Instagram"
+        >
+          <span class="landing-credit-inner">
+            <span class="landing-credit-prefix">Built with</span>
+            <span class="landing-credit-love" aria-hidden="true">
+              <svg class="landing-credit-heart" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                />
+              </svg>
+              love
+            </span>
+            <span class="landing-credit-by">by</span>
+            <span class="landing-credit-handle">@Adrian</span>
+          </span>
+        </a>
+      </footer>
     </div>
     <script>window.MATHORA_ACTIVE = "/student/";</script>
+    <script src="/js/session.js"></script>
+    <script src="/js/api.js"></script>
+    <script src="/js/game-progress.js"></script>
+    <script src="/js/app-init.js"></script>
+    <script src="/js/math-chat.js"></script>
     <script src="/js/shell.js"></script>
     <script src="/js/student-dashboard.js"></script>
     <script src="/js/pwa.js"></script>

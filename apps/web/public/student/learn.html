@@ -12,20 +12,34 @@
   </head>
   <body>
     <div id="page-content">
-      <div id="learn-page">
-        <h2>Key Stage Learning Paths</h2>
-        <p class="message">Simplified learning flow: choose topic, study revision notes, then complete quiz.</p>
-        <div class="pill-row" data-stages></div>
-        <div class="card">
-          <h3 data-stage-title>Topics</h3>
-          <ul class="list-stack" data-topics></ul>
-        </div>
-        <div class="card" data-topic-detail></div>
-        <div class="card" data-quiz></div>
-        <div class="card">
-          <h4>Content references</h4>
+      <div id="learn-page" class="learn-flow">
+        <header class="learn-header">
+          <h2>Learn</h2>
+          <p class="message">Choose your key stage, pick a topic, then study the guide and complete 10 quiz questions.</p>
+          <nav class="learn-breadcrumb" data-breadcrumb aria-label="Learn steps"></nav>
+          <div class="learn-steps" data-step-indicator aria-hidden="true"></div>
+        </header>
+
+        <section class="learn-panel" data-view="stages">
+          <h3 class="learn-panel-title">Choose your key stage</h3>
+          <div class="learn-stage-grid" data-stages></div>
+        </section>
+
+        <section class="learn-panel learn-panel-hidden" data-view="topics">
+          <h3 class="learn-panel-title" data-topics-heading>Topics</h3>
+          <ul class="learn-topic-grid" data-topics></ul>
+        </section>
+
+        <section class="learn-panel learn-panel-hidden" data-view="topic">
+          <div data-topic-detail></div>
+          <div class="card learn-quiz-card" data-quiz></div>
+        </section>
+
+        <aside class="card learn-sources" data-sources-wrap>
+          <h4>Curriculum references</h4>
           <ul class="list-stack" data-sources></ul>
-        </div>
+        </aside>
+
         <p class="message" data-message></p>
       </div>
     </div>

@@ -1,4 +1,4 @@
-const CACHE_NAME = "mathora-static-v2";
+const CACHE_NAME = "mathora-static-v14";
 const PRECACHE_URLS = [
   "/",
   "/offline.html",
@@ -13,7 +13,11 @@ const PRECACHE_URLS = [
   "/js/student-dashboard.js",
   "/js/learn.js",
   "/js/curriculum.js",
+  "/js/math-generator.js",
   "/js/flashcards.js",
+  "/js/game-banks.js",
+  "/js/game-session.js",
+  "/js/game-questions.js",
   "/js/games.js",
   "/js/teacher.js",
   "/js/admin.js",
@@ -21,6 +25,8 @@ const PRECACHE_URLS = [
   "/js/auth.js",
   "/manifest.webmanifest",
   "/icons/icon.svg",
+  "/icons/icon-192.png",
+  "/icons/icon-512.png",
   "/student/",
   "/student/index.html",
   "/student/learn.html",

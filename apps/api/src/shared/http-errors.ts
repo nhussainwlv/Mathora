@@ -6,5 +6,9 @@ export function notFoundHandler(_req: Request, res: Response) {
 
 export function errorHandler(error: unknown, _req: Request, res: Response, _next: NextFunction) {
   console.error("Unhandled API error:", error);
-  return res.status(500).json({ message: "Something went wrong" });
+  const message =
+    error instanceof Error && error.message
+      ? error.message
+      : "Something went wrong. Please try again.";
+  return res.status(500).json({ message });
 }

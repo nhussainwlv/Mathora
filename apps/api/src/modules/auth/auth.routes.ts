@@ -5,14 +5,14 @@ import { z } from "zod";
 import { UserRole } from "@prisma/client";
 import { prisma } from "../../shared/prisma.js";
 import { signAccessToken, signRefreshToken } from "../../shared/jwt.js";
+import { authGuard } from "../../shared/guards.js";
 
-const authRouter = Router();
+export const authRouter = Router();
 
 const signUpSchema = z.object({
   email: z.string().email(),
   password: z.string().min(8),
   displayName: z.string().min(2),
-  role: z.nativeEnum(UserRole).default(UserRole.STUDENT),
 });
 
 authRouter.post("/signup", async (req, res) => {
@@ -31,7 +31,7 @@ authRouter.post("/signup", async (req, res) => {
     data: {
       email: payload.data.email,
       passwordHash,
-      role: payload.data.role,
+      role: UserRole.STUDENT,
       profile: {
         create: {
           displayName: payload.data.displayName,
@@ -102,6 +102,22 @@ authRouter.post("/signin", async (req, res) => {
       role: user.role,
       profile: user.profile,
     },
+  });
+});
+
+authRouter.get("/me", authGuard, async (req, res) => {
+  const user = await prisma.user.findUnique({
+    where: { id: req.user!.id },
+    include: { profile: true },
+  });
+  if (!user) {
+    return res.status(404).json({ message: "User not found" });
+  }
+  return res.json({
+    id: user.id,
+    email: user.email,
+    role: user.role,
+    profile: user.profile,
   });
 });
 
@@ -252,4 +268,3 @@ authRouter.post("/password-reset/confirm", async (req, res) => {
   return res.status(400).json({ message: "Invalid token" });
 });
 
-export { authRouter };

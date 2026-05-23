@@ -7,26 +7,75 @@
     <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/css/main.css" />
+    <script src="/js/config.js"></script>
     <script src="/js/theme.js"></script>
     <title>Flashcards — Mathora</title>
   </head>
   <body>
     <div id="page-content">
       <div id="flashcards-page">
-        <div class="card message">
-          Timed recall: 20s | Mode: Spaced repetition | Smart suggestion: revisit algebra basics
+        <header class="flashcards-header">
+          <h1 class="flashcards-title">Flashcards</h1>
+          <p class="flashcards-sub">50 cards per level · auto-generated · tap to flip</p>
+        </header>
+
+        <div class="flashcards-level-row" role="tablist" aria-label="Key stage level">
+          <button type="button" class="flashcards-level-btn is-active" data-level-filter="all">All (200)</button>
+          <button type="button" class="flashcards-level-btn" data-level-filter="easy">Easy (50)</button>
+          <button type="button" class="flashcards-level-btn" data-level-filter="medium">Medium (50)</button>
+          <button type="button" class="flashcards-level-btn" data-level-filter="hard">Hard (50)</button>
+          <button type="button" class="flashcards-level-btn" data-level-filter="advanced">Advanced (50)</button>
         </div>
-        <button type="button" class="flashcard" data-card aria-label="Flip flashcard"></button>
-        <p class="message" data-hint></p>
-        <div class="btn-row">
-          <button type="button" class="btn btn-dark btn-sm" data-prev>Swipe Left</button>
-          <button type="button" class="btn btn-primary btn-sm" data-next>Swipe Right</button>
-          <button type="button" class="btn btn-outline btn-sm" data-favourite>Add favourite</button>
+
+        <div class="flashcards-mode-row">
+          <button type="button" class="flashcards-mode-btn is-active" data-mode="all">All cards</button>
+          <button type="button" class="flashcards-mode-btn" data-mode="favourites">
+            <span class="flashcards-star" aria-hidden="true">★</span> Favourites
+            <span class="flashcards-fav-badge" data-fav-count>0</span>
+          </button>
+        </div>
+
+        <section class="flashcards-fav-section" data-fav-section aria-label="Saved favourites">
+          <div class="flashcards-fav-section-head">
+            <h2 class="flashcards-fav-heading">Your favourites</h2>
+            <button type="button" class="btn btn-outline btn-sm" data-goto-favourites hidden>
+              Study favourites
+            </button>
+          </div>
+          <p class="message flashcards-fav-empty" data-fav-empty hidden>No favourites yet — tap ♥ on a card to save it here.</p>
+          <ul class="flashcards-fav-list" data-fav-list></ul>
+        </section>
+
+        <div class="flashcard-scene" data-scene>
+          <div
+            class="flashcard-inner"
+            data-card
+            role="button"
+            tabindex="0"
+            aria-label="Flip flashcard"
+          >
+            <div class="flashcard-face flashcard-face--front" data-card-front></div>
+            <div class="flashcard-face flashcard-face--back" data-card-back></div>
+          </div>
+        </div>
+
+        <p class="message flashcards-hint" data-hint></p>
+        <p class="message flashcards-counter" data-counter></p>
+
+        <div class="btn-row flashcards-controls">
+          <button type="button" class="btn btn-dark btn-sm" data-prev aria-label="Previous card">← Previous</button>
+          <button type="button" class="btn btn-primary btn-sm" data-favourite aria-label="Add to favourites">
+            <span data-fav-icon aria-hidden="true">♡</span>
+            <span data-fav-label>Add favourite</span>
+          </button>
+          <button type="button" class="btn btn-primary btn-sm" data-next aria-label="Next card">Next →</button>
         </div>
       </div>
     </div>
     <script>window.MATHORA_ACTIVE = "/student/flashcards.html";</script>
+    <script src="/js/session.js"></script>
     <script src="/js/shell.js"></script>
+    <script src="/js/math-generator.js"></script>
     <script src="/js/flashcards.js"></script>
     <script src="/js/pwa.js"></script>
   </body>

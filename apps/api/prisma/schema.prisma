@@ -3,7 +3,7 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "sqlite"
   url      = env("DATABASE_URL")
 }
 
@@ -24,6 +24,13 @@ enum AssignmentStatus {
   DRAFT
   PUBLISHED
   CLOSED
+}
+
+enum GameLevel {
+  EASY
+  MEDIUM
+  HARD
+  ADVANCED
 }
 
 model User {
@@ -47,6 +54,7 @@ model User {
   childLinks         ParentStudentLink[]    @relation("StudentLinks")
   assignmentsCreated Assignment[]           @relation("AssignmentCreator")
   submissions        AssignmentSubmission[]
+  gameSolves         GameSolve[]
 }
 
 model Profile {
@@ -156,7 +164,7 @@ model Question {
   optionsJson   Json?
   explanation   String
   difficulty    Difficulty
-  tags          String[]
+  tags          Json     @default("[]")
   createdAt     DateTime          @default(now())
   attempts      QuestionAttempt[]
   skill         Skill             @relation(fields: [skillId], references: [id], onDelete: Cascade)
@@ -258,4 +266,23 @@ model AnalyticsEvent {
   eventType   String
   payloadJson Json
   createdAt   DateTime @default(now())
+}
+
+model GameSolve {
+  id             String    @id @default(cuid())
+  userId         String
+  gameMode       String
+  level          GameLevel
+  questionKey    String
+  prompt         String
+  userAnswer     String?
+  correctAnswer  String
+  isCorrect      Boolean
+  xpEarned       Int       @default(0)
+  coinsEarned    Int       @default(0)
+  createdAt      DateTime  @default(now())
+  user           User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, gameMode, level])
+  @@index([userId, questionKey])
 }

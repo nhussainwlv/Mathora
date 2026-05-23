@@ -12,23 +12,22 @@
   </head>
   <body class="app-gradient">
     <main class="auth-page">
-      <h1>Create your Mathora account</h1>
+      <h1>Create your student account</h1>
+      <div class="api-banner" data-api-banner hidden></div>
+      <p class="message">Use your email — progress syncs across devices.</p>
       <form id="signup-form" class="auth-form">
         <input class="input" type="text" name="displayName" placeholder="Display name" required />
         <input class="input" type="email" name="email" placeholder="Email" required />
-        <input class="input" type="password" name="password" placeholder="Password" required />
-        <select class="input" name="role">
-          <option>STUDENT</option>
-          <option>TEACHER</option>
-          <option>PARENT</option>
-        </select>
+        <input class="input" type="password" name="password" placeholder="Password (min 8 characters)" required minlength="8" />
         <button class="btn btn-primary btn-block" type="submit">Sign up</button>
       </form>
+      <p class="message"><a href="/auth/signin.html">Already have an account? Sign in</a></p>
       <p class="message" data-auth-message></p>
     </main>
     <script src="/js/config.js"></script>
-    <script src="/js/api.js"></script>
     <script src="/js/session.js"></script>
+    <script src="/js/api.js"></script>
+    <script src="/js/game-progress.js"></script>
     <script src="/js/auth.js"></script>
     <script src="/js/pwa.js"></script>
   </body>

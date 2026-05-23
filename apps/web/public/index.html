@@ -4,26 +4,250 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#4f46e5" />
-    <meta name="description" content="Gamified UK curriculum maths platform for KS1–KS4" />
+    <meta
+      name="description"
+      content="Mathora — free UK maths learning for students. KS1–KS4 curriculum, games, flashcards, AI tutor, and progress tracking."
+    />
     <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Mathora" />
     <link rel="stylesheet" href="/css/main.css" />
+    <script src="/js/config.js"></script>
     <script src="/js/theme.js"></script>
-    <title>Mathora</title>
+    <title>Mathora — UK maths for students</title>
   </head>
-  <body class="app-gradient landing">
-    <div class="landing-card float-soft">
-      <h1>Mathora</h1>
-      <p>
-        Premium UK curriculum maths learning for KS1, KS2, KS3, and KS4 with AI guidance, gamified progression,
-        flashcards, teacher analytics, and parent monitoring.
-      </p>
-      <div class="btn-row">
-        <a class="btn btn-primary" href="/student/">Enter Student Hub</a>
-        <a class="btn btn-dark" href="/teacher/">Teacher Portal</a>
-        <a class="btn btn-outline" href="/admin/">Admin Console</a>
-      </div>
+  <body class="landing-page">
+    <div class="landing-bg" aria-hidden="true">
+      <span class="landing-symbol" style="--i: 0">π</span>
+      <span class="landing-symbol" style="--i: 1">∑</span>
+      <span class="landing-symbol" style="--i: 2">√</span>
+      <span class="landing-symbol" style="--i: 3">∞</span>
+      <span class="landing-symbol" style="--i: 4">÷</span>
+      <span class="landing-symbol" style="--i: 5">×</span>
     </div>
+
+    <header class="landing-nav">
+      <a href="/" class="landing-nav-brand">
+        <img src="/icons/icon.svg" width="36" height="36" alt="" class="landing-nav-logo" />
+        <span>Mathora</span>
+      </a>
+      <nav class="landing-nav-links" aria-label="Page sections">
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How it works</a>
+      </nav>
+      <div class="landing-nav-actions">
+        <button type="button" class="theme-toggle theme-toggle-landing" onclick="toggleTheme()" data-theme-label>
+          Dark mode
+        </button>
+        <a class="btn btn-outline btn-sm landing-nav-signin" href="/auth/signin.html">Sign in</a>
+        <a class="btn btn-primary btn-sm" href="/auth/signup.html">Get started</a>
+      </div>
+    </header>
+
+    <main class="landing-main">
+      <section class="landing-hero">
+        <p class="landing-badge">UK maths for students · KS1–KS4</p>
+        <h1 class="landing-title">Mathora</h1>
+        <blockquote class="landing-quote">
+          <p class="landing-quote-line">
+            Mathematics is the language of logic — every problem you solve builds confidence for the next.
+          </p>
+          <p class="landing-quote-line landing-quote-line--accent">
+            With steady practice, you turn unknowns into skills you can use for life.
+          </p>
+        </blockquote>
+        <p class="landing-lead">
+          Curriculum-aligned study paths, unlimited practice games, flashcards, and an AI tutor — with progress saved to
+          your account.
+        </p>
+        <div class="btn-row landing-cta">
+          <a class="btn btn-primary btn-lg" href="/auth/signup.html">Create free account</a>
+          <a class="btn btn-outline btn-lg" href="/auth/signin.html">Sign in</a>
+        </div>
+        <p class="landing-note">Free for students · No payment required</p>
+      </section>
+
+      <ul class="landing-trust" aria-label="Highlights">
+        <li>KS1–KS4 curriculum</li>
+        <li>4 game difficulty levels</li>
+        <li>AI step-by-step tutor</li>
+        <li>Works offline as an app</li>
+      </ul>
+
+      <section id="features" class="landing-features" aria-labelledby="features-heading">
+        <header class="landing-section-head">
+          <h2 id="features-heading">Everything you need to practise maths</h2>
+          <p>One calm place to learn, play, revise, and track how you are improving.</p>
+        </header>
+        <ul class="feature-grid">
+          <li class="feature-card">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+              </svg>
+            </span>
+            <h3>Learn</h3>
+            <p>
+              Follow key-stage paths from KS1 to KS4. Each topic includes explanations, formulas, diagrams, worked
+              examples, and a 10-question quiz.
+            </p>
+          </li>
+          <li class="feature-card">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="6" width="20" height="12" rx="2" />
+                <path d="M12 10v4M9 12h6" />
+              </svg>
+            </span>
+            <h3>Games</h3>
+            <p>
+              Unlimited questions across Easy, Medium, Hard, and Advanced (GCSE-style). Earn XP and coins every time you
+              play.
+            </p>
+          </li>
+          <li class="feature-card">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <path d="M8 12h8M12 8v8" />
+              </svg>
+            </span>
+            <h3>Flashcards</h3>
+            <p>Revise key facts by key stage — perfect for quick refreshers before class tests or homework.</p>
+          </li>
+          <li class="feature-card">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+              </svg>
+            </span>
+            <h3>AI tutor</h3>
+            <p>
+              Signed-in students can ask for step-by-step help on equations and homework-style questions from the tutor
+              button in the corner.
+            </p>
+          </li>
+          <li class="feature-card">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 3v18h18" />
+                <path d="M7 16l4-8 4 5 5-9" />
+              </svg>
+            </span>
+            <h3>Dashboard</h3>
+            <p>
+              Track XP, level, questions solved, accuracy, coins, and weekly progress — synced when you sign in.
+            </p>
+          </li>
+          <li class="feature-card">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </span>
+            <h3>Install &amp; offline</h3>
+            <p>Add Mathora to your home screen and keep studying when your connection drops.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="how-it-works" class="landing-steps" aria-labelledby="steps-heading">
+        <header class="landing-section-head">
+          <h2 id="steps-heading">How it works</h2>
+          <p>Three simple steps from sign-up to steady progress.</p>
+        </header>
+        <ol class="steps-list">
+          <li class="step-card">
+            <span class="step-num">1</span>
+            <h3>Create your account</h3>
+            <p>Sign up in under a minute with your email. Your progress stays tied to your profile.</p>
+          </li>
+          <li class="step-card">
+            <span class="step-num">2</span>
+            <h3>Learn or play</h3>
+            <p>Pick a topic in Learn, drill with flashcards, or jump into games at the level that suits you.</p>
+          </li>
+          <li class="step-card">
+            <span class="step-num">3</span>
+            <h3>Watch your stats grow</h3>
+            <p>Your dashboard updates with XP, accuracy, and solved questions as you practise.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="landing-cta-band" aria-labelledby="cta-heading">
+        <div class="landing-cta-inner">
+          <h2 id="cta-heading">Ready to get confident with maths?</h2>
+          <p>Join Mathora and start practising today — free, focused, and built for UK students.</p>
+          <div class="btn-row landing-cta">
+            <a class="btn btn-primary btn-lg" href="/auth/signup.html">Create free account</a>
+            <a class="btn btn-outline btn-lg" href="/student/">Preview the app</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="landing-footer">
+      <div class="landing-footer-inner">
+        <p class="landing-footer-brand">Mathora</p>
+        <nav class="landing-footer-nav" aria-label="Footer">
+          <a href="#features">Features</a>
+          <a href="/auth/signin.html">Sign in</a>
+          <a href="/auth/signup.html">Sign up</a>
+          <a href="/student/">Student hub</a>
+        </nav>
+        <a
+          href="https://www.instagram.com/adrianjamesash/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="landing-credit landing-credit--premium"
+          aria-label="Built with love by Adrian on Instagram"
+        >
+          <span class="landing-credit-inner">
+            <span class="landing-credit-prefix">Built with</span>
+            <span class="landing-credit-love" aria-hidden="true">
+              <svg class="landing-credit-heart" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                />
+              </svg>
+              love
+            </span>
+            <span class="landing-credit-by">by</span>
+            <span class="landing-credit-handle">@Adrian</span>
+          </span>
+        </a>
+      </div>
+    </footer>
+
+    <script src="/js/session.js"></script>
+    <script src="/js/api.js"></script>
+    <script src="/js/math-chat.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        if (window.MathoraSession?.accessToken) {
+          window.location.replace("/student/");
+          return;
+        }
+        const dark = document.documentElement.classList.contains("dark");
+        document.querySelectorAll("[data-theme-label]").forEach((el) => {
+          el.textContent = dark ? "Light mode" : "Dark mode";
+        });
+        document.querySelectorAll('a[href^="#"]').forEach((link) => {
+          link.addEventListener("click", (e) => {
+            const id = link.getAttribute("href");
+            if (!id || id === "#") return;
+            const target = document.querySelector(id);
+            if (!target) return;
+            e.preventDefault();
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+          });
+        });
+      });
+    </script>
     <script src="/js/pwa.js"></script>
   </body>
 </html>

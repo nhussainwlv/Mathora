@@ -6,11 +6,25 @@ export type QuizQuestion = {
   explanation: string;
 };
 
+import { topicDetails, type Formula } from "./topic-details.ts";
+import { resolveDiagram, type DiagramAsset } from "./topic-diagrams.ts";
+import { getExamplesByStage } from "./topic-examples-by-stage.ts";
+import { buildFullQuiz } from "./quiz-extensions.ts";
+
+export type StageKey = "KS1" | "KS2" | "KS3" | "KS4";
+export type LearnLink = { label: string; url: string };
+
 export type TopicContent = {
   id: string;
-  stage: "KS1" | "KS2" | "KS3" | "KS4";
+  stage: StageKey;
   title: string;
   overview: string;
+  information: string;
+  detailedExplanation: string;
+  formulas: Formula[];
+  diagram?: DiagramAsset;
+  workedExamplesByStage: Record<StageKey, string[]>;
+  topicLinks: LearnLink[];
   revisionPoints: string[];
   revisionTasks: string[];
   questions: QuizQuestion[];
@@ -25,7 +39,22 @@ function topic(
   revisionTasks: string[],
   questions: QuizQuestion[],
 ): TopicContent {
-  return { id, stage, title, overview, revisionPoints, revisionTasks, questions };
+  const detail = topicDetails[id];
+  return {
+    id,
+    stage,
+    title,
+    overview,
+    information: detail?.detailedExplanation ?? overview,
+    detailedExplanation: detail?.detailedExplanation ?? overview,
+    formulas: detail?.formulas ?? [],
+    diagram: resolveDiagram(id),
+    workedExamplesByStage: getExamplesByStage(id, stage, title),
+    topicLinks: detail?.topicLinks ?? [],
+    revisionPoints,
+    revisionTasks,
+    questions: buildFullQuiz(id, questions),
+  };
 }
 
 export const curriculumSources = [
