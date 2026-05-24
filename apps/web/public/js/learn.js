@@ -40,6 +40,7 @@ function initLearn() {
 
   const completedRevision = {};
   const answers = {};
+  const revealed = {};
   const scores = {};
 
   const breadcrumb = root.querySelector("[data-breadcrumb]");
@@ -74,7 +75,10 @@ function initLearn() {
 
   function clearQuizAnswers(topic) {
     if (!topic) return;
-    topic.questions.forEach((q) => delete answers[q.id]);
+    topic.questions.forEach((q) => {
+      delete answers[q.id];
+      delete revealed[q.id];
+    });
     delete scores[topic.id];
   }
 
@@ -154,7 +158,7 @@ function initLearn() {
           <button type="button" class="learn-topic-card" data-topic-id="${topic.id}">
             <strong>${topic.title}</strong>
             <span>${topic.overview}</span>
-            <span>10 quiz questions</span>
+            <span>20 quiz questions</span>
           </button>
         </li>`,
       )
@@ -295,74 +299,126 @@ function initLearn() {
     });
   }
 
+  function optionClass(question, index) {
+    const picked = answers[question.id];
+    const isRevealed = Boolean(revealed[question.id]);
+    const isCorrect = index === question.answerIndex;
+    const isPicked = picked === index;
+    const classes = ["learn-quiz-option"];
+
+    if (!isRevealed && isPicked) classes.push("is-picked");
+    if (isRevealed) {
+      if (isCorrect) classes.push("is-correct");
+      else if (isPicked) classes.push("is-wrong");
+    }
+    return classes.join(" ");
+  }
+
   function renderQuiz() {
     const topic = getSelectedTopic();
     if (!topic) return;
 
     const total = topic.questions.length;
     const currentScore = scores[topic.id];
+    const answeredCount = topic.questions.filter((q) => revealed[q.id]).length;
 
     quizRoot.innerHTML = `
       <h3>Topic quiz</h3>
-      <p class="learn-quiz-meta">Answer all ${total} questions, then submit to see your score and explanations.</p>
+      <p class="learn-quiz-meta">Tap an answer for each question. <span class="learn-quiz-legend-ok">Green</span> = correct, <span class="learn-quiz-legend-bad">red</span> = wrong (correct answer shown).</p>
+      <p class="learn-quiz-progress" data-quiz-progress>${answeredCount}/${total} answered</p>
       <div data-questions></div>
       <div class="btn-row">
         <button type="button" class="btn btn-primary btn-sm" data-submit-quiz>Submit quiz</button>
         <button type="button" class="btn btn-dark btn-sm" data-reset-quiz>Reset answers</button>
       </div>
-      ${currentScore !== undefined ? `<p class="message"><strong>Score: ${currentScore}/${total}</strong>${currentScore === total ? " — Excellent!" : currentScore >= total * 0.7 ? " — Good work!" : " — Review the examples and try again."}</p>` : ""}
+      ${currentScore !== undefined ? `<p class="learn-quiz-score"><strong>Score: ${currentScore}/${total}</strong>${currentScore === total ? " — Excellent!" : currentScore >= total * 0.7 ? " — Good work!" : " — Review the guide and try again."}</p>` : ""}
     `;
 
     const questionsEl = quizRoot.querySelector("[data-questions]");
     questionsEl.innerHTML = topic.questions
       .map((question, qi) => {
+        const isRevealed = Boolean(revealed[question.id]);
+        const picked = answers[question.id];
+        const gotRight = picked === question.answerIndex;
+
         const options = question.options
           .map((option, index) => {
-            const selected = answers[question.id] === index;
-            return `<button type="button" class="quiz-option${selected ? " selected" : ""}" data-q="${question.id}" data-opt="${index}">${option}</button>`;
+            const locked = isRevealed ? "disabled" : "";
+            const aria =
+              isRevealed && index === question.answerIndex
+                ? ' aria-label="Correct answer"'
+                : isRevealed && index === picked
+                  ? ' aria-label="Your answer"'
+                  : "";
+            return `<button type="button" class="${optionClass(question, index)}" data-q="${question.id}" data-opt="${index}" ${locked}${aria}>${option}</button>`;
           })
           .join("");
 
-        const feedback =
-          currentScore !== undefined
-            ? `<p class="message">Correct: ${question.options[question.answerIndex]}. ${question.explanation}</p>`
-            : "";
+        const feedback = isRevealed
+          ? `<p class="learn-quiz-feedback ${gotRight ? "learn-quiz-feedback--ok" : "learn-quiz-feedback--bad"}">${
+              gotRight ? "Correct!" : `Not quite. The answer is <strong>${question.options[question.answerIndex]}</strong>.`
+            } ${question.explanation}</p>`
+          : "";
 
-        return `<div class="card" style="margin-top:0.75rem;">
-          <p style="font-weight:600;">Q${qi + 1}. ${question.prompt}</p>
-          <div class="grid-2" style="margin-top:0.5rem;">${options}</div>
+        return `<div class="learn-quiz-question card">
+          <p class="learn-quiz-prompt">Q${qi + 1}. ${question.prompt}</p>
+          <div class="learn-quiz-options">${options}</div>
           ${feedback}
         </div>`;
       })
       .join("");
 
-    questionsEl.querySelectorAll("[data-q]").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        answers[btn.dataset.q] = Number(btn.dataset.opt);
-        renderQuiz();
-      });
-    });
+  }
 
-    quizRoot.querySelector("[data-submit-quiz]")?.addEventListener("click", () => {
-      const answered = topic.questions.filter((q) => answers[q.id] !== undefined).length;
-      if (answered < total) {
-        setMessage(`Answer all ${total} questions before submitting (${answered}/${total} done).`);
+  quizRoot.addEventListener("click", (event) => {
+    const btn = event.target.closest(".learn-quiz-option");
+    if (!btn || btn.disabled) return;
+    const topic = getSelectedTopic();
+    if (!topic) return;
+    const qid = btn.dataset.q;
+    const opt = Number(btn.dataset.opt);
+    if (!qid || Number.isNaN(opt) || revealed[qid]) return;
+
+    answers[qid] = opt;
+    revealed[qid] = true;
+
+    const question = topic.questions.find((q) => q.id === qid);
+    const gotRight = question && opt === question.answerIndex;
+    if (gotRight) {
+      setMessage(`Correct on Q${topic.questions.findIndex((q) => q.id === qid) + 1}!`);
+    } else {
+      setMessage("Not quite — the correct answer is highlighted in green.");
+    }
+
+    renderQuiz();
+  });
+
+  quizRoot.addEventListener("click", (event) => {
+    if (event.target.closest("[data-submit-quiz]")) {
+      const topic = getSelectedTopic();
+      if (!topic) return;
+      const total = topic.questions.length;
+      const done = topic.questions.filter((q) => revealed[q.id]).length;
+      if (done < total) {
+        setMessage(`Answer all ${total} questions first (${done}/${total} done).`);
         return;
       }
       const correct = topic.questions.reduce((acc, question) => {
         return answers[question.id] === question.answerIndex ? acc + 1 : acc;
       }, 0);
       scores[topic.id] = correct;
-      setMessage(`Quiz submitted: ${correct}/${total} on ${topic.title}.`);
+      setMessage(`Quiz complete: ${correct}/${total} on ${topic.title}.`);
       renderQuiz();
-    });
-
-    quizRoot.querySelector("[data-reset-quiz]")?.addEventListener("click", () => {
+      return;
+    }
+    if (event.target.closest("[data-reset-quiz]")) {
+      const topic = getSelectedTopic();
+      if (!topic) return;
       clearQuizAnswers(topic);
       setMessage(`Quiz reset for ${topic.title}.`);
       renderQuiz();
-    });
-  }
+    }
+  });
 
   setView("stages");
   setMessage("Step 1: choose KS1, KS2, KS3 or KS4.");

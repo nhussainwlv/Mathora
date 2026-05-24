@@ -49,7 +49,7 @@ function updateSignedInUi(root) {
     statsList.innerHTML = `
       <li class="list-item">Progress synced to your account</li>
       <li class="list-item">Games: 4 levels — unlimited questions</li>
-      <li class="list-item">Learn: 10-question quiz on every topic</li>
+      <li class="list-item">Learn: 20-question quiz on every topic</li>
       <li class="list-item">Flashcards and AI tutor available</li>
     `;
   }

@@ -1,4 +1,4 @@
-const CACHE_NAME = "mathora-static-v14";
+const CACHE_NAME = "mathora-static-v16";
 const PRECACHE_URLS = [
   "/",
   "/offline.html",
@@ -23,6 +23,8 @@ const PRECACHE_URLS = [
   "/js/admin.js",
   "/js/parent.js",
   "/js/auth.js",
+  "/js/math-chat.js",
+  "/js/app-init.js",
   "/manifest.webmanifest",
   "/icons/icon.svg",
   "/icons/icon-192.png",

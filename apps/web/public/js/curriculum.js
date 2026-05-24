@@ -210,6 +210,126 @@ export const topicsByStage = {
           ],
           "answerIndex": 1,
           "explanation": "17 lies between 16 and 18."
+        },
+        {
+          "id": "ks1-counting-q11",
+          "prompt": "Count in 5s: 7, 12, ?",
+          "options": [
+            "16",
+            "17",
+            "18",
+            "22"
+          ],
+          "answerIndex": 1,
+          "explanation": "Add 5 to 12."
+        },
+        {
+          "id": "ks1-counting-q12",
+          "prompt": "Count in 10s: 62, 72, ?",
+          "options": [
+            "82",
+            "81",
+            "92",
+            "83"
+          ],
+          "answerIndex": 0,
+          "explanation": "Add 10 to 72."
+        },
+        {
+          "id": "ks1-counting-q13",
+          "prompt": "8 − 0 =",
+          "options": [
+            "7",
+            "10",
+            "9",
+            "8"
+          ],
+          "answerIndex": 3,
+          "explanation": "8 minus 0 equals 8."
+        },
+        {
+          "id": "ks1-counting-q14",
+          "prompt": "Count in 5s: 17, 22, ?",
+          "options": [
+            "26",
+            "32",
+            "28",
+            "27"
+          ],
+          "answerIndex": 3,
+          "explanation": "Add 5 to 22."
+        },
+        {
+          "id": "ks1-counting-q15",
+          "prompt": "Count in 10s: 2, 12, ?",
+          "options": [
+            "22",
+            "23",
+            "32",
+            "21"
+          ],
+          "answerIndex": 0,
+          "explanation": "Add 10 to 12."
+        },
+        {
+          "id": "ks1-counting-q16",
+          "prompt": "7 + 2 =",
+          "options": [
+            "9",
+            "8",
+            "10",
+            "11"
+          ],
+          "answerIndex": 0,
+          "explanation": "7 plus 2 equals 9."
+        },
+        {
+          "id": "ks1-counting-q17",
+          "prompt": "Count in 10s: 12, 22, ?",
+          "options": [
+            "33",
+            "32",
+            "31",
+            "42"
+          ],
+          "answerIndex": 1,
+          "explanation": "Add 10 to 22."
+        },
+        {
+          "id": "ks1-counting-q18",
+          "prompt": "Count in 10s: 22, 32, ?",
+          "options": [
+            "52",
+            "41",
+            "42",
+            "43"
+          ],
+          "answerIndex": 2,
+          "explanation": "Add 10 to 32."
+        },
+        {
+          "id": "ks1-counting-q19",
+          "prompt": "Count in 2s: 6, 8, ?",
+          "options": [
+            "12",
+            "9",
+            "10",
+            "11"
+          ],
+          "answerIndex": 2,
+          "explanation": "Add 2 to 8."
+        },
+        {
+          "id": "ks1-counting-q20",
+          "prompt": "15 − 9 =",
+          "options": [
+            "8",
+            "6",
+            "7",
+            "5"
+          ],
+          "answerIndex": 1,
+          "explanation": "15 minus 9 equals 6."
         }
       ]
     },
@@ -404,6 +524,126 @@ export const topicsByStage = {
           ],
           "answerIndex": 1,
           "explanation": "7 + 3 = 10."
+        },
+        {
+          "id": "ks1-addition-q11",
+          "prompt": "1 + 1 =",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "1"
+          ],
+          "answerIndex": 0,
+          "explanation": "1 plus 1 equals 2."
+        },
+        {
+          "id": "ks1-addition-q12",
+          "prompt": "1 + -7 =",
+          "options": [
+            "-6",
+            "-5",
+            "-4",
+            "-7"
+          ],
+          "answerIndex": 0,
+          "explanation": "1 plus -7 equals -6."
+        },
+        {
+          "id": "ks1-addition-q13",
+          "prompt": "6 + -3 =",
+          "options": [
+            "2",
+            "5",
+            "3",
+            "4"
+          ],
+          "answerIndex": 2,
+          "explanation": "6 plus -3 equals 3."
+        },
+        {
+          "id": "ks1-addition-q14",
+          "prompt": "6 + 1 =",
+          "options": [
+            "6",
+            "7",
+            "9",
+            "8"
+          ],
+          "answerIndex": 1,
+          "explanation": "6 plus 1 equals 7."
+        },
+        {
+          "id": "ks1-addition-q15",
+          "prompt": "6 − -1 =",
+          "options": [
+            "7",
+            "8",
+            "6",
+            "9"
+          ],
+          "answerIndex": 0,
+          "explanation": "6 minus -1 equals 7."
+        },
+        {
+          "id": "ks1-addition-q16",
+          "prompt": "3 + -3 =",
+          "options": [
+            "1",
+            "2",
+            "0",
+            "-1"
+          ],
+          "answerIndex": 2,
+          "explanation": "3 plus -3 equals 0."
+        },
+        {
+          "id": "ks1-addition-q17",
+          "prompt": "3 + -1 =",
+          "options": [
+            "3",
+            "4",
+            "2",
+            "1"
+          ],
+          "answerIndex": 2,
+          "explanation": "3 plus -1 equals 2."
+        },
+        {
+          "id": "ks1-addition-q18",
+          "prompt": "2 + 1 =",
+          "options": [
+            "2",
+            "4",
+            "5",
+            "3"
+          ],
+          "answerIndex": 3,
+          "explanation": "2 plus 1 equals 3."
+        },
+        {
+          "id": "ks1-addition-q19",
+          "prompt": "3 + 0 =",
+          "options": [
+            "4",
+            "5",
+            "2",
+            "3"
+          ],
+          "answerIndex": 3,
+          "explanation": "3 plus 0 equals 3."
+        },
+        {
+          "id": "ks1-addition-q20",
+          "prompt": "10 + -7 =",
+          "options": [
+            "2",
+            "5",
+            "3",
+            "4"
+          ],
+          "answerIndex": 2,
+          "explanation": "10 plus -7 equals 3."
         }
       ]
     },
@@ -598,6 +838,126 @@ export const topicsByStage = {
           ],
           "answerIndex": 1,
           "explanation": "7 - 2 = 5."
+        },
+        {
+          "id": "ks1-subtraction-q11",
+          "prompt": "9 − 6 =",
+          "options": [
+            "2",
+            "5",
+            "3",
+            "4"
+          ],
+          "answerIndex": 2,
+          "explanation": "9 minus 6 equals 3."
+        },
+        {
+          "id": "ks1-subtraction-q12",
+          "prompt": "11 − 6 =",
+          "options": [
+            "4",
+            "7",
+            "5",
+            "6"
+          ],
+          "answerIndex": 2,
+          "explanation": "11 minus 6 equals 5."
+        },
+        {
+          "id": "ks1-subtraction-q13",
+          "prompt": "13 − 3 =",
+          "options": [
+            "12",
+            "10",
+            "11",
+            "9"
+          ],
+          "answerIndex": 1,
+          "explanation": "13 minus 3 equals 10."
+        },
+        {
+          "id": "ks1-subtraction-q14",
+          "prompt": "5 − 3 =",
+          "options": [
+            "4",
+            "2",
+            "3",
+            "1"
+          ],
+          "answerIndex": 1,
+          "explanation": "5 minus 3 equals 2."
+        },
+        {
+          "id": "ks1-subtraction-q15",
+          "prompt": "2 − -5 =",
+          "options": [
+            "7",
+            "6",
+            "8",
+            "9"
+          ],
+          "answerIndex": 0,
+          "explanation": "2 minus -5 equals 7."
+        },
+        {
+          "id": "ks1-subtraction-q16",
+          "prompt": "5 − 2 =",
+          "options": [
+            "3",
+            "2",
+            "5",
+            "4"
+          ],
+          "answerIndex": 0,
+          "explanation": "5 minus 2 equals 3."
+        },
+        {
+          "id": "ks1-subtraction-q17",
+          "prompt": "7 − 2 =",
+          "options": [
+            "5",
+            "4",
+            "7",
+            "6"
+          ],
+          "answerIndex": 0,
+          "explanation": "7 minus 2 equals 5."
+        },
+        {
+          "id": "ks1-subtraction-q18",
+          "prompt": "11 − 1 =",
+          "options": [
+            "11",
+            "12",
+            "9",
+            "10"
+          ],
+          "answerIndex": 3,
+          "explanation": "11 minus 1 equals 10."
+        },
+        {
+          "id": "ks1-subtraction-q19",
+          "prompt": "5 − 1 =",
+          "options": [
+            "5",
+            "6",
+            "3",
+            "4"
+          ],
+          "answerIndex": 3,
+          "explanation": "5 minus 1 equals 4."
+        },
+        {
+          "id": "ks1-subtraction-q20",
+          "prompt": "15 ÷ 5 =",
+          "options": [
+            "5",
+            "3",
+            "4",
+            "2"
+          ],
+          "answerIndex": 1,
+          "explanation": "15 divided by 5 is 3."
         }
       ]
     },
@@ -792,6 +1152,126 @@ export const topicsByStage = {
           ],
           "answerIndex": 1,
           "explanation": "Squares have four right angles."
+        },
+        {
+          "id": "ks1-shapes-q11",
+          "prompt": "A shape with 4 equal sides is a:",
+          "options": [
+            "Square",
+            "Circle",
+            "Rectangle",
+            "Sphere"
+          ],
+          "answerIndex": 0,
+          "explanation": "Square has 4 sides."
+        },
+        {
+          "id": "ks1-shapes-q12",
+          "prompt": "How many corners does a square have?",
+          "options": [
+            "3",
+            "6",
+            "5",
+            "4"
+          ],
+          "answerIndex": 3,
+          "explanation": "A square has 4 vertices."
+        },
+        {
+          "id": "ks1-shapes-q13",
+          "prompt": "7 − 2 =",
+          "options": [
+            "5",
+            "4",
+            "7",
+            "6"
+          ],
+          "answerIndex": 0,
+          "explanation": "7 minus 2 equals 5."
+        },
+        {
+          "id": "ks1-shapes-q14",
+          "prompt": "A shape with 5 equal sides is a:",
+          "options": [
+            "Pentagon",
+            "Circle",
+            "Rectangle",
+            "Sphere"
+          ],
+          "answerIndex": 0,
+          "explanation": "Pentagon has 5 sides."
+        },
+        {
+          "id": "ks1-shapes-q15",
+          "prompt": "6 + 11 =",
+          "options": [
+            "16",
+            "19",
+            "18",
+            "17"
+          ],
+          "answerIndex": 3,
+          "explanation": "6 plus 11 equals 17."
+        },
+        {
+          "id": "ks1-shapes-q16",
+          "prompt": "A shape with 3 equal sides is a:",
+          "options": [
+            "Circle",
+            "Sphere",
+            "Rectangle",
+            "Triangle"
+          ],
+          "answerIndex": 3,
+          "explanation": "Triangle has 3 sides."
+        },
+        {
+          "id": "ks1-shapes-q17",
+          "prompt": "9 − 4 =",
+          "options": [
+            "5",
+            "4",
+            "7",
+            "6"
+          ],
+          "answerIndex": 0,
+          "explanation": "9 minus 4 equals 5."
+        },
+        {
+          "id": "ks1-shapes-q18",
+          "prompt": "8 + 6 =",
+          "options": [
+            "13",
+            "16",
+            "14",
+            "15"
+          ],
+          "answerIndex": 2,
+          "explanation": "8 plus 6 equals 14."
+        },
+        {
+          "id": "ks1-shapes-q19",
+          "prompt": "3 − 2 =",
+          "options": [
+            "1",
+            "0",
+            "2",
+            "3"
+          ],
+          "answerIndex": 0,
+          "explanation": "3 minus 2 equals 1."
+        },
+        {
+          "id": "ks1-shapes-q20",
+          "prompt": "2 + 4 =",
+          "options": [
+            "5",
+            "7",
+            "8",
+            "6"
+          ],
+          "answerIndex": 3,
+          "explanation": "2 plus 4 equals 6."
         }
       ]
     },
@@ -986,6 +1466,126 @@ export const topicsByStage = {
           ],
           "answerIndex": 2,
           "explanation": "April follows March."
+        },
+        {
+          "id": "ks1-time-q11",
+          "prompt": "Half past 11 is:",
+          "options": [
+            "11:15",
+            "11:30",
+            "12:00",
+            "11:45"
+          ],
+          "answerIndex": 1,
+          "explanation": "Half past means 30 minutes."
+        },
+        {
+          "id": "ks1-time-q12",
+          "prompt": "O'clock at 12 is:",
+          "options": [
+            "12:00",
+            "12:15",
+            "12:45",
+            "1:00"
+          ],
+          "answerIndex": 0,
+          "explanation": "O'clock means :00."
+        },
+        {
+          "id": "ks1-time-q13",
+          "prompt": "9 + 13 =",
+          "options": [
+            "21",
+            "23",
+            "24",
+            "22"
+          ],
+          "answerIndex": 3,
+          "explanation": "9 plus 13 equals 22."
+        },
+        {
+          "id": "ks1-time-q14",
+          "prompt": "Half past 5 is:",
+          "options": [
+            "5:45",
+            "6:00",
+            "5:15",
+            "5:30"
+          ],
+          "answerIndex": 3,
+          "explanation": "Half past means 30 minutes."
+        },
+        {
+          "id": "ks1-time-q15",
+          "prompt": "O'clock at 6 is:",
+          "options": [
+            "6:00",
+            "6:45",
+            "7:00",
+            "6:15"
+          ],
+          "answerIndex": 0,
+          "explanation": "O'clock means :00."
+        },
+        {
+          "id": "ks1-time-q16",
+          "prompt": "14 + 11 =",
+          "options": [
+            "25",
+            "24",
+            "26",
+            "27"
+          ],
+          "answerIndex": 0,
+          "explanation": "14 plus 11 equals 25."
+        },
+        {
+          "id": "ks1-time-q17",
+          "prompt": "Half past 3 is:",
+          "options": [
+            "3:15",
+            "3:30",
+            "4:00",
+            "3:45"
+          ],
+          "answerIndex": 1,
+          "explanation": "Half past means 30 minutes."
+        },
+        {
+          "id": "ks1-time-q18",
+          "prompt": "O'clock at 4 is:",
+          "options": [
+            "4:00",
+            "4:15",
+            "4:45",
+            "5:00"
+          ],
+          "answerIndex": 0,
+          "explanation": "O'clock means :00."
+        },
+        {
+          "id": "ks1-time-q19",
+          "prompt": "8 − -9 =",
+          "options": [
+            "18",
+            "19",
+            "17",
+            "16"
+          ],
+          "answerIndex": 2,
+          "explanation": "8 minus -9 equals 17."
+        },
+        {
+          "id": "ks1-time-q20",
+          "prompt": "Half past 9 is:",
+          "options": [
+            "9:15",
+            "9:45",
+            "10:00",
+            "9:30"
+          ],
+          "answerIndex": 3,
+          "explanation": "Half past means 30 minutes."
         }
       ]
     },
@@ -1180,6 +1780,126 @@ export const topicsByStage = {
           ],
           "answerIndex": 1,
           "explanation": "3 × 10 = 30p."
+        },
+        {
+          "id": "ks1-money-q11",
+          "prompt": "1p + -7p =",
+          "options": [
+            "-6p",
+            "-7p",
+            "-5p",
+            "-4p"
+          ],
+          "answerIndex": 0,
+          "explanation": "1p and -7p make -6p."
+        },
+        {
+          "id": "ks1-money-q12",
+          "prompt": "Item 9p, pay 13p. Change?",
+          "options": [
+            "4p",
+            "3p",
+            "5p",
+            "6p"
+          ],
+          "answerIndex": 0,
+          "explanation": "13 − 9 = 4p."
+        },
+        {
+          "id": "ks1-money-q13",
+          "prompt": "Which coin is worth the most in this list?",
+          "options": [
+            "20p",
+            "5p",
+            "10p",
+            "50p"
+          ],
+          "answerIndex": 3,
+          "explanation": "50p has the highest value shown."
+        },
+        {
+          "id": "ks1-money-q14",
+          "prompt": "5p + 7p =",
+          "options": [
+            "11p",
+            "13p",
+            "14p",
+            "12p"
+          ],
+          "answerIndex": 3,
+          "explanation": "5p and 7p make 12p."
+        },
+        {
+          "id": "ks1-money-q15",
+          "prompt": "4 − -2 =",
+          "options": [
+            "5",
+            "8",
+            "6",
+            "7"
+          ],
+          "answerIndex": 2,
+          "explanation": "4 minus -2 equals 6."
+        },
+        {
+          "id": "ks1-money-q16",
+          "prompt": "Item 9p, pay 12p. Change?",
+          "options": [
+            "5p",
+            "3p",
+            "2p",
+            "4p"
+          ],
+          "answerIndex": 1,
+          "explanation": "12 − 9 = 3p."
+        },
+        {
+          "id": "ks1-money-q17",
+          "prompt": "12 + 11 =",
+          "options": [
+            "22",
+            "24",
+            "25",
+            "23"
+          ],
+          "answerIndex": 3,
+          "explanation": "12 plus 11 equals 23."
+        },
+        {
+          "id": "ks1-money-q18",
+          "prompt": "Item 11p, pay 17p. Change?",
+          "options": [
+            "7p",
+            "8p",
+            "6p",
+            "5p"
+          ],
+          "answerIndex": 2,
+          "explanation": "17 − 11 = 6p."
+        },
+        {
+          "id": "ks1-money-q19",
+          "prompt": "6p + 2p =",
+          "options": [
+            "9p",
+            "10p",
+            "7p",
+            "8p"
+          ],
+          "answerIndex": 3,
+          "explanation": "6p and 2p make 8p."
+        },
+        {
+          "id": "ks1-money-q20",
+          "prompt": "Item 2p, pay 7p. Change?",
+          "options": [
+            "6p",
+            "7p",
+            "4p",
+            "5p"
+          ],
+          "answerIndex": 3,
+          "explanation": "7 − 2 = 5p."
         }
       ]
     },
@@ -1374,6 +2094,126 @@ export const topicsByStage = {
           ],
           "answerIndex": 1,
           "explanation": "12 ÷ 4 = 3."
+        },
+        {
+          "id": "ks1-fractions-basics-q11",
+          "prompt": "1/3 of 12 =",
+          "options": [
+            "5",
+            "12",
+            "4",
+            "3"
+          ],
+          "answerIndex": 2,
+          "explanation": "12 ÷ 3 = 4."
+        },
+        {
+          "id": "ks1-fractions-basics-q12",
+          "prompt": "1/2 of 10 =",
+          "options": [
+            "5",
+            "4",
+            "6",
+            "10"
+          ],
+          "answerIndex": 0,
+          "explanation": "10 ÷ 2 = 5."
+        },
+        {
+          "id": "ks1-fractions-basics-q13",
+          "prompt": "9 + 13 =",
+          "options": [
+            "21",
+            "24",
+            "23",
+            "22"
+          ],
+          "answerIndex": 3,
+          "explanation": "9 plus 13 equals 22."
+        },
+        {
+          "id": "ks1-fractions-basics-q14",
+          "prompt": "1/4 of 8 =",
+          "options": [
+            "3",
+            "1",
+            "8",
+            "2"
+          ],
+          "answerIndex": 3,
+          "explanation": "8 ÷ 4 = 2."
+        },
+        {
+          "id": "ks1-fractions-basics-q15",
+          "prompt": "3 ÷ 3 =",
+          "options": [
+            "0",
+            "2",
+            "1",
+            "3"
+          ],
+          "answerIndex": 2,
+          "explanation": "3 divided by 3 is 1."
+        },
+        {
+          "id": "ks1-fractions-basics-q16",
+          "prompt": "1/2 of 8 =",
+          "options": [
+            "5",
+            "8",
+            "4",
+            "3"
+          ],
+          "answerIndex": 2,
+          "explanation": "8 ÷ 2 = 4."
+        },
+        {
+          "id": "ks1-fractions-basics-q17",
+          "prompt": "1/3 of 15 =",
+          "options": [
+            "5",
+            "4",
+            "6",
+            "15"
+          ],
+          "answerIndex": 0,
+          "explanation": "15 ÷ 3 = 5."
+        },
+        {
+          "id": "ks1-fractions-basics-q18",
+          "prompt": "12 − -5 =",
+          "options": [
+            "18",
+            "17",
+            "19",
+            "16"
+          ],
+          "answerIndex": 1,
+          "explanation": "12 minus -5 equals 17."
+        },
+        {
+          "id": "ks1-fractions-basics-q19",
+          "prompt": "1/2 of 4 =",
+          "options": [
+            "1",
+            "4",
+            "3",
+            "2"
+          ],
+          "answerIndex": 3,
+          "explanation": "4 ÷ 2 = 2."
+        },
+        {
+          "id": "ks1-fractions-basics-q20",
+          "prompt": "1/3 of 9 =",
+          "options": [
+            "3",
+            "2",
+            "9",
+            "4"
+          ],
+          "answerIndex": 0,
+          "explanation": "9 ÷ 3 = 3."
         }
       ]
     }
@@ -1570,6 +2410,125 @@ export const topicsByStage = {
           ],
           "answerIndex": 2,
           "explanation": "6 × 7 = 42."
+        },
+        {
+          "id": "ks2-multiplication-q11",
+          "prompt": "10 × -2 =",
+          "options": [
+            "-19",
+            "-20",
+            "-10",
+            "-18"
+          ],
+          "answerIndex": 1,
+          "explanation": "10 times -2 is -20."
+        },
+        {
+          "id": "ks2-multiplication-q12",
+          "prompt": "2 × -5 =",
+          "options": [
+            "-9",
+            "-10",
+            "-8",
+            "-5"
+          ],
+          "answerIndex": 1,
+          "explanation": "2 times -5 is -10."
+        },
+        {
+          "id": "ks2-multiplication-q13",
+          "prompt": "3 × 8 =",
+          "options": [
+            "24",
+            "16",
+            "27",
+            "25"
+          ],
+          "answerIndex": 0,
+          "explanation": "3 times 8 is 24."
+        },
+        {
+          "id": "ks2-multiplication-q14",
+          "prompt": "5 × 5 =",
+          "options": [
+            "25",
+            "20",
+            "30",
+            "26"
+          ],
+          "answerIndex": 0,
+          "explanation": "5 times 5 is 25."
+        },
+        {
+          "id": "ks2-multiplication-q15",
+          "prompt": "14 − 0 =",
+          "options": [
+            "15",
+            "13",
+            "16",
+            "14"
+          ],
+          "answerIndex": 3,
+          "explanation": "14 minus 0 equals 14."
+        },
+        {
+          "id": "ks2-multiplication-q16",
+          "prompt": "8 × -5 =",
+          "options": [
+            "-32",
+            "-39",
+            "-35",
+            "-40"
+          ],
+          "answerIndex": 3,
+          "explanation": "8 times -5 is -40."
+        },
+        {
+          "id": "ks2-multiplication-q17",
+          "prompt": "10 × 0 =",
+          "options": [
+            "1",
+            "10",
+            "0"
+          ],
+          "answerIndex": 2,
+          "explanation": "10 times 0 is 0."
+        },
+        {
+          "id": "ks2-multiplication-q18",
+          "prompt": "7 × 2 =",
+          "options": [
+            "14",
+            "12",
+            "15",
+            "21"
+          ],
+          "answerIndex": 0,
+          "explanation": "7 times 2 is 14."
+        },
+        {
+          "id": "ks2-multiplication-q19",
+          "prompt": "9 × -3 =",
+          "options": [
+            "-27",
+            "-24",
+            "-26",
+            "-18"
+          ],
+          "answerIndex": 0,
+          "explanation": "9 times -3 is -27."
+        },
+        {
+          "id": "ks2-multiplication-q20",
+          "prompt": "13 + 6 =",
+          "options": [
+            "19",
+            "20",
+            "18",
+            "21"
+          ],
+          "answerIndex": 0,
+          "explanation": "13 plus 6 equals 19."
         }
       ]
     },
@@ -1764,6 +2723,126 @@ export const topicsByStage = {
           ],
           "answerIndex": 2,
           "explanation": "7 × 9 = 63."
+        },
+        {
+          "id": "ks2-division-q11",
+          "prompt": "72 ÷ 8 =",
+          "options": [
+            "8",
+            "11",
+            "9",
+            "10"
+          ],
+          "answerIndex": 2,
+          "explanation": "72 divided by 8 is 9."
+        },
+        {
+          "id": "ks2-division-q12",
+          "prompt": "24 ÷ 8 =",
+          "options": [
+            "2",
+            "5",
+            "3",
+            "4"
+          ],
+          "answerIndex": 2,
+          "explanation": "24 divided by 8 is 3."
+        },
+        {
+          "id": "ks2-division-q13",
+          "prompt": "8 ÷ 4 =",
+          "options": [
+            "4",
+            "2",
+            "3",
+            "1"
+          ],
+          "answerIndex": 1,
+          "explanation": "8 divided by 4 is 2."
+        },
+        {
+          "id": "ks2-division-q14",
+          "prompt": "16 ÷ 4 =",
+          "options": [
+            "6",
+            "4",
+            "5",
+            "3"
+          ],
+          "answerIndex": 1,
+          "explanation": "16 divided by 4 is 4."
+        },
+        {
+          "id": "ks2-division-q15",
+          "prompt": "11 + 13 =",
+          "options": [
+            "24",
+            "23",
+            "25",
+            "26"
+          ],
+          "answerIndex": 0,
+          "explanation": "11 plus 13 equals 24."
+        },
+        {
+          "id": "ks2-division-q16",
+          "prompt": "20 ÷ 10 =",
+          "options": [
+            "2",
+            "1",
+            "4",
+            "3"
+          ],
+          "answerIndex": 0,
+          "explanation": "20 divided by 10 is 2."
+        },
+        {
+          "id": "ks2-division-q17",
+          "prompt": "0 ÷ 10 =",
+          "options": [
+            "0",
+            "-1",
+            "2",
+            "1"
+          ],
+          "answerIndex": 0,
+          "explanation": "0 divided by 10 is 0."
+        },
+        {
+          "id": "ks2-division-q18",
+          "prompt": "18 ÷ 9 =",
+          "options": [
+            "1",
+            "4",
+            "3",
+            "2"
+          ],
+          "answerIndex": 3,
+          "explanation": "18 divided by 9 is 2."
+        },
+        {
+          "id": "ks2-division-q19",
+          "prompt": "10 ÷ 10 =",
+          "options": [
+            "0",
+            "3",
+            "2",
+            "1"
+          ],
+          "answerIndex": 3,
+          "explanation": "10 divided by 10 is 1."
+        },
+        {
+          "id": "ks2-division-q20",
+          "prompt": "5 ÷ 5 =",
+          "options": [
+            "3",
+            "1",
+            "2",
+            "0"
+          ],
+          "answerIndex": 1,
+          "explanation": "5 divided by 5 is 1."
         }
       ]
     },
@@ -1958,6 +3037,126 @@ export const topicsByStage = {
           ],
           "answerIndex": 1,
           "explanation": "Look at hundredths digit."
+        },
+        {
+          "id": "ks2-decimals-q11",
+          "prompt": "8 tenths as a decimal:",
+          "options": [
+            "0.9",
+            "8",
+            "0.7",
+            "0.8"
+          ],
+          "answerIndex": 3,
+          "explanation": "8/10 = 0.8."
+        },
+        {
+          "id": "ks2-decimals-q12",
+          "prompt": "6 tenths as a decimal:",
+          "options": [
+            "0.5",
+            "6",
+            "0.6",
+            "0.7"
+          ],
+          "answerIndex": 2,
+          "explanation": "6/10 = 0.6."
+        },
+        {
+          "id": "ks2-decimals-q13",
+          "prompt": "16 − -9 =",
+          "options": [
+            "26",
+            "27",
+            "25",
+            "24"
+          ],
+          "answerIndex": 2,
+          "explanation": "16 minus -9 equals 25."
+        },
+        {
+          "id": "ks2-decimals-q14",
+          "prompt": "9 tenths as a decimal:",
+          "options": [
+            "9",
+            "0.9",
+            "1",
+            "0.8"
+          ],
+          "answerIndex": 1,
+          "explanation": "9/10 = 0.9."
+        },
+        {
+          "id": "ks2-decimals-q15",
+          "prompt": "2 tenths as a decimal:",
+          "options": [
+            "0.2",
+            "0.1",
+            "0.3",
+            "2"
+          ],
+          "answerIndex": 0,
+          "explanation": "2/10 = 0.2."
+        },
+        {
+          "id": "ks2-decimals-q16",
+          "prompt": "4 ÷ 2 =",
+          "options": [
+            "1",
+            "4",
+            "2",
+            "3"
+          ],
+          "answerIndex": 2,
+          "explanation": "4 divided by 2 is 2."
+        },
+        {
+          "id": "ks2-decimals-q17",
+          "prompt": "3 tenths as a decimal:",
+          "options": [
+            "0.4",
+            "3",
+            "0.2",
+            "0.3"
+          ],
+          "answerIndex": 3,
+          "explanation": "3/10 = 0.3."
+        },
+        {
+          "id": "ks2-decimals-q18",
+          "prompt": "1 tenths as a decimal:",
+          "options": [
+            "0.1",
+            "0",
+            "1",
+            "0.2"
+          ],
+          "answerIndex": 0,
+          "explanation": "1/10 = 0.1."
+        },
+        {
+          "id": "ks2-decimals-q19",
+          "prompt": "8 − 2 =",
+          "options": [
+            "7",
+            "5",
+            "8",
+            "6"
+          ],
+          "answerIndex": 3,
+          "explanation": "8 minus 2 equals 6."
+        },
+        {
+          "id": "ks2-decimals-q20",
+          "prompt": "5 tenths as a decimal:",
+          "options": [
+            "0.5",
+            "0.4",
+            "0.6",
+            "5"
+          ],
+          "answerIndex": 0,
+          "explanation": "5/10 = 0.5."
         }
       ]
     },
@@ -2152,6 +3351,126 @@ export const topicsByStage = {
           ],
           "answerIndex": 1,
           "explanation": "1 1/2 = 3/2."
+        },
+        {
+          "id": "ks2-fractions-q11",
+          "prompt": "What is 2/5 of 15?",
+          "options": [
+            "6",
+            "15",
+            "5",
+            "7"
+          ],
+          "answerIndex": 0,
+          "explanation": "15 × 2/5 = 6."
+        },
+        {
+          "id": "ks2-fractions-q12",
+          "prompt": "What is 2/4 of 12?",
+          "options": [
+            "6",
+            "12",
+            "5",
+            "7"
+          ],
+          "answerIndex": 0,
+          "explanation": "12 × 2/4 = 6."
+        },
+        {
+          "id": "ks2-fractions-q13",
+          "prompt": "What is 1/3 of 12?",
+          "options": [
+            "5",
+            "12",
+            "4",
+            "3"
+          ],
+          "answerIndex": 2,
+          "explanation": "12 × 1/3 = 4."
+        },
+        {
+          "id": "ks2-fractions-q14",
+          "prompt": "What is 1/2 of 8?",
+          "options": [
+            "5",
+            "8",
+            "4",
+            "3"
+          ],
+          "answerIndex": 2,
+          "explanation": "8 × 1/2 = 4."
+        },
+        {
+          "id": "ks2-fractions-q15",
+          "prompt": "8 − -4 =",
+          "options": [
+            "12",
+            "11",
+            "13",
+            "14"
+          ],
+          "answerIndex": 0,
+          "explanation": "8 minus -4 equals 12."
+        },
+        {
+          "id": "ks2-fractions-q16",
+          "prompt": "What is 5/6 of 18?",
+          "options": [
+            "14",
+            "18",
+            "15",
+            "16"
+          ],
+          "answerIndex": 2,
+          "explanation": "18 × 5/6 = 15."
+        },
+        {
+          "id": "ks2-fractions-q17",
+          "prompt": "What is 5/6 of 12?",
+          "options": [
+            "11",
+            "12",
+            "9",
+            "10"
+          ],
+          "answerIndex": 3,
+          "explanation": "12 × 5/6 = 10."
+        },
+        {
+          "id": "ks2-fractions-q18",
+          "prompt": "What is 1/3 of 6?",
+          "options": [
+            "3",
+            "6",
+            "1",
+            "2"
+          ],
+          "answerIndex": 3,
+          "explanation": "6 × 1/3 = 2."
+        },
+        {
+          "id": "ks2-fractions-q19",
+          "prompt": "3 + 10 =",
+          "options": [
+            "12",
+            "15",
+            "13",
+            "14"
+          ],
+          "answerIndex": 2,
+          "explanation": "3 plus 10 equals 13."
+        },
+        {
+          "id": "ks2-fractions-q20",
+          "prompt": "What is 2/3 of 15?",
+          "options": [
+            "10",
+            "11",
+            "9",
+            "15"
+          ],
+          "answerIndex": 0,
+          "explanation": "15 × 2/3 = 10."
         }
       ]
     },
@@ -2346,6 +3665,126 @@ export const topicsByStage = {
           ],
           "answerIndex": 0,
           "explanation": "y changes sign."
+        },
+        {
+          "id": "ks2-geometry-q11",
+          "prompt": "Rectangle 7 cm by 2 cm. Perimeter?",
+          "options": [
+            "16 cm",
+            "9 cm",
+            "20 cm",
+            "18 cm"
+          ],
+          "answerIndex": 3,
+          "explanation": "Perimeter = 2(7+2) = 18 cm."
+        },
+        {
+          "id": "ks2-geometry-q12",
+          "prompt": "Rectangle 4 cm by 2 cm. Perimeter?",
+          "options": [
+            "10 cm",
+            "6 cm",
+            "14 cm",
+            "12 cm"
+          ],
+          "answerIndex": 3,
+          "explanation": "Perimeter = 2(4+2) = 12 cm."
+        },
+        {
+          "id": "ks2-geometry-q13",
+          "prompt": "Rectangle 11 cm by 7 cm. Perimeter?",
+          "options": [
+            "36 cm",
+            "18 cm",
+            "34 cm",
+            "38 cm"
+          ],
+          "answerIndex": 0,
+          "explanation": "Perimeter = 2(11+7) = 36 cm."
+        },
+        {
+          "id": "ks2-geometry-q14",
+          "prompt": "Rectangle 8 cm by 7 cm. Perimeter?",
+          "options": [
+            "30 cm",
+            "15 cm",
+            "28 cm",
+            "32 cm"
+          ],
+          "answerIndex": 0,
+          "explanation": "Perimeter = 2(8+7) = 30 cm."
+        },
+        {
+          "id": "ks2-geometry-q15",
+          "prompt": "9 − -5 =",
+          "options": [
+            "15",
+            "16",
+            "14",
+            "13"
+          ],
+          "answerIndex": 2,
+          "explanation": "9 minus -5 equals 14."
+        },
+        {
+          "id": "ks2-geometry-q16",
+          "prompt": "Rectangle 9 cm by 4 cm. Perimeter?",
+          "options": [
+            "28 cm",
+            "26 cm",
+            "13 cm",
+            "24 cm"
+          ],
+          "answerIndex": 1,
+          "explanation": "Perimeter = 2(9+4) = 26 cm."
+        },
+        {
+          "id": "ks2-geometry-q17",
+          "prompt": "Rectangle 8 cm by 4 cm. Perimeter?",
+          "options": [
+            "26 cm",
+            "24 cm",
+            "12 cm",
+            "22 cm"
+          ],
+          "answerIndex": 1,
+          "explanation": "Perimeter = 2(8+4) = 24 cm."
+        },
+        {
+          "id": "ks2-geometry-q18",
+          "prompt": "Rectangle 10 cm by 5 cm. Perimeter?",
+          "options": [
+            "30 cm",
+            "32 cm",
+            "28 cm",
+            "15 cm"
+          ],
+          "answerIndex": 0,
+          "explanation": "Perimeter = 2(10+5) = 30 cm."
+        },
+        {
+          "id": "ks2-geometry-q19",
+          "prompt": "Rectangle 7 cm by 5 cm. Perimeter?",
+          "options": [
+            "24 cm",
+            "26 cm",
+            "22 cm",
+            "12 cm"
+          ],
+          "answerIndex": 0,
+          "explanation": "Perimeter = 2(7+5) = 24 cm."
+        },
+        {
+          "id": "ks2-geometry-q20",
+          "prompt": "16 ÷ 1 =",
+          "options": [
+            "16",
+            "18",
+            "15",
+            "17"
+          ],
+          "answerIndex": 0,
+          "explanation": "16 divided by 1 is 16."
         }
       ]
     },
@@ -2540,6 +3979,126 @@ export const topicsByStage = {
           ],
           "answerIndex": 1,
           "explanation": "½ × 10 × 6 = 30."
+        },
+        {
+          "id": "ks2-measurements-q11",
+          "prompt": "6 kg = ? g",
+          "options": [
+            "6000 g",
+            "6 g",
+            "600 g",
+            "60000 g"
+          ],
+          "answerIndex": 0,
+          "explanation": "1 kg = 1000 g."
+        },
+        {
+          "id": "ks2-measurements-q12",
+          "prompt": "7 kg = ? g",
+          "options": [
+            "700 g",
+            "70000 g",
+            "7 g",
+            "7000 g"
+          ],
+          "answerIndex": 3,
+          "explanation": "1 kg = 1000 g."
+        },
+        {
+          "id": "ks2-measurements-q13",
+          "prompt": "8 kg = ? g",
+          "options": [
+            "8 g",
+            "80000 g",
+            "800 g",
+            "8000 g"
+          ],
+          "answerIndex": 3,
+          "explanation": "1 kg = 1000 g."
+        },
+        {
+          "id": "ks2-measurements-q14",
+          "prompt": "3 − -5 =",
+          "options": [
+            "7",
+            "10",
+            "8",
+            "9"
+          ],
+          "answerIndex": 2,
+          "explanation": "3 minus -5 equals 8."
+        },
+        {
+          "id": "ks2-measurements-q15",
+          "prompt": "3 kg = ? g",
+          "options": [
+            "3000 g",
+            "300 g",
+            "3 g",
+            "30000 g"
+          ],
+          "answerIndex": 0,
+          "explanation": "1 kg = 1000 g."
+        },
+        {
+          "id": "ks2-measurements-q16",
+          "prompt": "2 + 0 =",
+          "options": [
+            "1",
+            "4",
+            "3",
+            "2"
+          ],
+          "answerIndex": 3,
+          "explanation": "2 plus 0 equals 2."
+        },
+        {
+          "id": "ks2-measurements-q17",
+          "prompt": "2 kg = ? g",
+          "options": [
+            "2000 g",
+            "20000 g",
+            "200 g",
+            "2 g"
+          ],
+          "answerIndex": 0,
+          "explanation": "1 kg = 1000 g."
+        },
+        {
+          "id": "ks2-measurements-q18",
+          "prompt": "12 − 4 =",
+          "options": [
+            "8",
+            "10",
+            "7",
+            "9"
+          ],
+          "answerIndex": 0,
+          "explanation": "12 minus 4 equals 8."
+        },
+        {
+          "id": "ks2-measurements-q19",
+          "prompt": "1 kg = ? g",
+          "options": [
+            "10000 g",
+            "1000 g",
+            "1 g",
+            "100 g"
+          ],
+          "answerIndex": 1,
+          "explanation": "1 kg = 1000 g."
+        },
+        {
+          "id": "ks2-measurements-q20",
+          "prompt": "11 + 5 =",
+          "options": [
+            "18",
+            "16",
+            "15",
+            "17"
+          ],
+          "answerIndex": 1,
+          "explanation": "11 plus 5 equals 16."
         }
       ]
     },
@@ -2734,6 +4293,126 @@ export const topicsByStage = {
           ],
           "answerIndex": 1,
           "explanation": "20% of 35 = 7, 35 - 7 = 28."
+        },
+        {
+          "id": "ks2-word-problems-q11",
+          "prompt": "4 + -6 =",
+          "options": [
+            "-2",
+            "0",
+            "-1",
+            "-3"
+          ],
+          "answerIndex": 0,
+          "explanation": "4 plus -6 equals -2."
+        },
+        {
+          "id": "ks2-word-problems-q12",
+          "prompt": "8 + -4 =",
+          "options": [
+            "4",
+            "6",
+            "5",
+            "3"
+          ],
+          "answerIndex": 0,
+          "explanation": "8 plus -4 equals 4."
+        },
+        {
+          "id": "ks2-word-problems-q13",
+          "prompt": "5 + -2 =",
+          "options": [
+            "2",
+            "3",
+            "5",
+            "4"
+          ],
+          "answerIndex": 1,
+          "explanation": "5 plus -2 equals 3."
+        },
+        {
+          "id": "ks2-word-problems-q14",
+          "prompt": "9 + -4 =",
+          "options": [
+            "4",
+            "5",
+            "7",
+            "6"
+          ],
+          "answerIndex": 1,
+          "explanation": "9 plus -4 equals 5."
+        },
+        {
+          "id": "ks2-word-problems-q15",
+          "prompt": "13 − -6 =",
+          "options": [
+            "18",
+            "20",
+            "19",
+            "21"
+          ],
+          "answerIndex": 2,
+          "explanation": "13 minus -6 equals 19."
+        },
+        {
+          "id": "ks2-word-problems-q16",
+          "prompt": "4 + 7 =",
+          "options": [
+            "11",
+            "13",
+            "12",
+            "10"
+          ],
+          "answerIndex": 0,
+          "explanation": "4 plus 7 equals 11."
+        },
+        {
+          "id": "ks2-word-problems-q17",
+          "prompt": "8 + 3 =",
+          "options": [
+            "11",
+            "13",
+            "12",
+            "10"
+          ],
+          "answerIndex": 0,
+          "explanation": "8 plus 3 equals 11."
+        },
+        {
+          "id": "ks2-word-problems-q18",
+          "prompt": "7 + 1 =",
+          "options": [
+            "7",
+            "10",
+            "9",
+            "8"
+          ],
+          "answerIndex": 3,
+          "explanation": "7 plus 1 equals 8."
+        },
+        {
+          "id": "ks2-word-problems-q19",
+          "prompt": "7 + -7 =",
+          "options": [
+            "1",
+            "2",
+            "-1",
+            "0"
+          ],
+          "answerIndex": 3,
+          "explanation": "7 plus -7 equals 0."
+        },
+        {
+          "id": "ks2-word-problems-q20",
+          "prompt": "5 ÷ 1 =",
+          "options": [
+            "6",
+            "5",
+            "7",
+            "4"
+          ],
+          "answerIndex": 1,
+          "explanation": "5 divided by 1 is 5."
         }
       ]
     }
@@ -2934,6 +4613,125 @@ export const topicsByStage = {
           ],
           "answerIndex": 1,
           "explanation": "Same power of x."
+        },
+        {
+          "id": "ks3-algebra-q11",
+          "prompt": "If x = 2, value of 7x?",
+          "options": [
+            "14",
+            "7",
+            "15",
+            "21"
+          ],
+          "answerIndex": 0,
+          "explanation": "7 × 2 = 14."
+        },
+        {
+          "id": "ks3-algebra-q12",
+          "prompt": "If x = 2, value of 3x?",
+          "options": [
+            "6",
+            "3",
+            "7",
+            "9"
+          ],
+          "answerIndex": 0,
+          "explanation": "3 × 2 = 6."
+        },
+        {
+          "id": "ks3-algebra-q13",
+          "prompt": "If x = 7, value of 5x?",
+          "options": [
+            "36",
+            "35",
+            "40",
+            "30"
+          ],
+          "answerIndex": 1,
+          "explanation": "5 × 7 = 35."
+        },
+        {
+          "id": "ks3-algebra-q14",
+          "prompt": "If x = 7, value of 7x?",
+          "options": [
+            "50",
+            "49",
+            "56",
+            "42"
+          ],
+          "answerIndex": 1,
+          "explanation": "7 × 7 = 49."
+        },
+        {
+          "id": "ks3-algebra-q15",
+          "prompt": "6 + 9 =",
+          "options": [
+            "15",
+            "14",
+            "16",
+            "17"
+          ],
+          "answerIndex": 0,
+          "explanation": "6 plus 9 equals 15."
+        },
+        {
+          "id": "ks3-algebra-q16",
+          "prompt": "If x = 6, value of -5x?",
+          "options": [
+            "-30",
+            "-25",
+            "-29",
+            "-35"
+          ],
+          "answerIndex": 0,
+          "explanation": "-5 × 6 = -30."
+        },
+        {
+          "id": "ks3-algebra-q17",
+          "prompt": "If x = 6, value of 1x?",
+          "options": [
+            "5",
+            "6",
+            "7"
+          ],
+          "answerIndex": 1,
+          "explanation": "1 × 6 = 6."
+        },
+        {
+          "id": "ks3-algebra-q18",
+          "prompt": "If x = 5, value of 9x?",
+          "options": [
+            "36",
+            "46",
+            "54",
+            "45"
+          ],
+          "answerIndex": 3,
+          "explanation": "9 × 5 = 45."
+        },
+        {
+          "id": "ks3-algebra-q19",
+          "prompt": "If x = 5, value of 7x?",
+          "options": [
+            "42",
+            "28",
+            "36",
+            "35"
+          ],
+          "answerIndex": 3,
+          "explanation": "7 × 5 = 35."
+        },
+        {
+          "id": "ks3-algebra-q20",
+          "prompt": "8 ÷ 8 =",
+          "options": [
+            "3",
+            "1",
+            "2",
+            "0"
+          ],
+          "answerIndex": 1,
+          "explanation": "8 divided by 8 is 1."
         }
       ]
     },
@@ -3128,6 +4926,126 @@ export const topicsByStage = {
           ],
           "answerIndex": 2,
           "explanation": "k=4, y=20."
+        },
+        {
+          "id": "ks3-ratios-q11",
+          "prompt": "Ratio 3:4 equivalent to:",
+          "options": [
+            "15:20",
+            "3:4",
+            "8:4",
+            "3:9"
+          ],
+          "answerIndex": 0,
+          "explanation": "Multiply both parts by 5."
+        },
+        {
+          "id": "ks3-ratios-q12",
+          "prompt": "Ratio 2:2 equivalent to:",
+          "options": [
+            "10:10",
+            "2:2",
+            "7:2",
+            "2:7"
+          ],
+          "answerIndex": 0,
+          "explanation": "Multiply both parts by 5."
+        },
+        {
+          "id": "ks3-ratios-q13",
+          "prompt": "Ratio 6:5 equivalent to:",
+          "options": [
+            "6:5",
+            "6:7",
+            "8:5",
+            "12:10"
+          ],
+          "answerIndex": 3,
+          "explanation": "Multiply both parts by 2."
+        },
+        {
+          "id": "ks3-ratios-q14",
+          "prompt": "Ratio 3:6 equivalent to:",
+          "options": [
+            "3:6",
+            "3:8",
+            "5:6",
+            "6:12"
+          ],
+          "answerIndex": 3,
+          "explanation": "Multiply both parts by 2."
+        },
+        {
+          "id": "ks3-ratios-q15",
+          "prompt": "12 − 7 =",
+          "options": [
+            "5",
+            "4",
+            "7",
+            "6"
+          ],
+          "answerIndex": 0,
+          "explanation": "12 minus 7 equals 5."
+        },
+        {
+          "id": "ks3-ratios-q16",
+          "prompt": "Ratio 4:0 equivalent to:",
+          "options": [
+            "20:0",
+            "9:0",
+            "4:0",
+            "4:5"
+          ],
+          "answerIndex": 0,
+          "explanation": "Multiply both parts by 5."
+        },
+        {
+          "id": "ks3-ratios-q17",
+          "prompt": "Ratio 3:0 equivalent to:",
+          "options": [
+            "15:0",
+            "8:0",
+            "3:0",
+            "3:5"
+          ],
+          "answerIndex": 0,
+          "explanation": "Multiply both parts by 5."
+        },
+        {
+          "id": "ks3-ratios-q18",
+          "prompt": "Ratio 2:-2 equivalent to:",
+          "options": [
+            "2:2",
+            "8:-8",
+            "2:-2",
+            "6:-2"
+          ],
+          "answerIndex": 1,
+          "explanation": "Multiply both parts by 4."
+        },
+        {
+          "id": "ks3-ratios-q19",
+          "prompt": "Ratio 6:-1 equivalent to:",
+          "options": [
+            "6:3",
+            "24:-4",
+            "6:-1",
+            "10:-1"
+          ],
+          "answerIndex": 1,
+          "explanation": "Multiply both parts by 4."
+        },
+        {
+          "id": "ks3-ratios-q20",
+          "prompt": "11 + 4 =",
+          "options": [
+            "14",
+            "17",
+            "16",
+            "15"
+          ],
+          "answerIndex": 3,
+          "explanation": "11 plus 4 equals 15."
         }
       ]
     },
@@ -3322,6 +5240,121 @@ export const topicsByStage = {
           ],
           "answerIndex": 2,
           "explanation": "0.05 is small."
+        },
+        {
+          "id": "ks3-probability-q11",
+          "prompt": "1 favourable out of 2 equally likely outcomes. P =",
+          "options": [
+            "1/2",
+            "1/3",
+            "2/2"
+          ],
+          "answerIndex": 0,
+          "explanation": "Probability = favourable ÷ total."
+        },
+        {
+          "id": "ks3-probability-q12",
+          "prompt": "5 favourable out of 10 equally likely outcomes. P =",
+          "options": [
+            "5/11",
+            "6/10",
+            "5/10"
+          ],
+          "answerIndex": 2,
+          "explanation": "Probability = favourable ÷ total."
+        },
+        {
+          "id": "ks3-probability-q13",
+          "prompt": "2 favourable out of 4 equally likely outcomes. P =",
+          "options": [
+            "3/4",
+            "2/5",
+            "2/4"
+          ],
+          "answerIndex": 2,
+          "explanation": "Probability = favourable ÷ total."
+        },
+        {
+          "id": "ks3-probability-q14",
+          "prompt": "15 − 7 =",
+          "options": [
+            "10",
+            "8",
+            "9",
+            "7"
+          ],
+          "answerIndex": 1,
+          "explanation": "15 minus 7 equals 8."
+        },
+        {
+          "id": "ks3-probability-q15",
+          "prompt": "4 favourable out of 8 equally likely outcomes. P =",
+          "options": [
+            "5/8",
+            "4/8",
+            "4/9"
+          ],
+          "answerIndex": 1,
+          "explanation": "Probability = favourable ÷ total."
+        },
+        {
+          "id": "ks3-probability-q16",
+          "prompt": "3 + -6 =",
+          "options": [
+            "-3",
+            "-2",
+            "-1",
+            "-4"
+          ],
+          "answerIndex": 0,
+          "explanation": "3 plus -6 equals -3."
+        },
+        {
+          "id": "ks3-probability-q17",
+          "prompt": "15 − 1 =",
+          "options": [
+            "15",
+            "16",
+            "13",
+            "14"
+          ],
+          "answerIndex": 3,
+          "explanation": "15 minus 1 equals 14."
+        },
+        {
+          "id": "ks3-probability-q18",
+          "prompt": "3 favourable out of 6 equally likely outcomes. P =",
+          "options": [
+            "3/7",
+            "4/6",
+            "3/6"
+          ],
+          "answerIndex": 2,
+          "explanation": "Probability = favourable ÷ total."
+        },
+        {
+          "id": "ks3-probability-q19",
+          "prompt": "2 ÷ 1 =",
+          "options": [
+            "2",
+            "3",
+            "1",
+            "4"
+          ],
+          "answerIndex": 0,
+          "explanation": "2 divided by 1 is 2."
+        },
+        {
+          "id": "ks3-probability-q20",
+          "prompt": "14 − -5 =",
+          "options": [
+            "21",
+            "19",
+            "20",
+            "18"
+          ],
+          "answerIndex": 1,
+          "explanation": "14 minus -5 equals 19."
         }
       ]
     },
@@ -3516,6 +5549,125 @@ export const topicsByStage = {
           ],
           "answerIndex": 1,
           "explanation": "Negative slope goes down."
+        },
+        {
+          "id": "ks3-graphs-q11",
+          "prompt": "Line y = 3x + 0 passes through:",
+          "options": [
+            "(9, 24)",
+            "(24, 8)",
+            "(8, 25)",
+            "(8, 24)"
+          ],
+          "answerIndex": 3,
+          "explanation": "Substitute x = 8."
+        },
+        {
+          "id": "ks3-graphs-q12",
+          "prompt": "Line y = 2x + 0 passes through:",
+          "options": [
+            "(7, 12)",
+            "(12, 6)",
+            "(6, 13)",
+            "(6, 12)"
+          ],
+          "answerIndex": 3,
+          "explanation": "Substitute x = 6."
+        },
+        {
+          "id": "ks3-graphs-q13",
+          "prompt": "Line y = 4x + 1 passes through:",
+          "options": [
+            "(8, 29)",
+            "(29, 7)",
+            "(7, 29)",
+            "(7, 30)"
+          ],
+          "answerIndex": 2,
+          "explanation": "Substitute x = 7."
+        },
+        {
+          "id": "ks3-graphs-q14",
+          "prompt": "Line y = 3x + 1 passes through:",
+          "options": [
+            "(7, 19)",
+            "(19, 6)",
+            "(6, 19)",
+            "(6, 20)"
+          ],
+          "answerIndex": 2,
+          "explanation": "Substitute x = 6."
+        },
+        {
+          "id": "ks3-graphs-q15",
+          "prompt": "2 + 6 =",
+          "options": [
+            "7",
+            "10",
+            "8",
+            "9"
+          ],
+          "answerIndex": 2,
+          "explanation": "2 plus 6 equals 8."
+        },
+        {
+          "id": "ks3-graphs-q16",
+          "prompt": "Line y = 4x + 2 passes through:",
+          "options": [
+            "(2, 0)",
+            "(0, 2)",
+            "(0, 3)",
+            "(1, 2)"
+          ],
+          "answerIndex": 1,
+          "explanation": "Substitute x = 0."
+        },
+        {
+          "id": "ks3-graphs-q17",
+          "prompt": "Line y = 1x + 2 passes through:",
+          "options": [
+            "(1, -1)",
+            "(-1, 1)",
+            "(-1, 2)",
+            "(0, 1)"
+          ],
+          "answerIndex": 1,
+          "explanation": "Substitute x = -1."
+        },
+        {
+          "id": "ks3-graphs-q18",
+          "prompt": "Line y = 4x + 3 passes through:",
+          "options": [
+            "(0, -1)",
+            "(-1, -1)",
+            "(-1, 0)"
+          ],
+          "answerIndex": 1,
+          "explanation": "Substitute x = -1."
+        },
+        {
+          "id": "ks3-graphs-q19",
+          "prompt": "Line y = 3x + 3 passes through:",
+          "options": [
+            "(-5, -12)",
+            "(-4, -12)",
+            "(-5, -11)",
+            "(-12, -5)"
+          ],
+          "answerIndex": 0,
+          "explanation": "Substitute x = -5."
+        },
+        {
+          "id": "ks3-graphs-q20",
+          "prompt": "10 ÷ 5 =",
+          "options": [
+            "1",
+            "4",
+            "2",
+            "3"
+          ],
+          "answerIndex": 2,
+          "explanation": "10 divided by 5 is 2."
         }
       ]
     },
@@ -3710,6 +5862,126 @@ export const topicsByStage = {
           ],
           "answerIndex": 2,
           "explanation": "180-50-60=70."
+        },
+        {
+          "id": "ks3-angles-q11",
+          "prompt": "Angles on a straight line: 79° and ?",
+          "options": [
+            "101°",
+            "91°",
+            "111°",
+            "90°"
+          ],
+          "answerIndex": 0,
+          "explanation": "Straight line sums to 180°."
+        },
+        {
+          "id": "ks3-angles-q12",
+          "prompt": "Angles on a straight line: 71° and ?",
+          "options": [
+            "109°",
+            "99°",
+            "119°",
+            "90°"
+          ],
+          "answerIndex": 0,
+          "explanation": "Straight line sums to 180°."
+        },
+        {
+          "id": "ks3-angles-q13",
+          "prompt": "Angles on a straight line: 52° and ?",
+          "options": [
+            "138°",
+            "90°",
+            "118°",
+            "128°"
+          ],
+          "answerIndex": 3,
+          "explanation": "Straight line sums to 180°."
+        },
+        {
+          "id": "ks3-angles-q14",
+          "prompt": "Angles on a straight line: 46° and ?",
+          "options": [
+            "144°",
+            "90°",
+            "124°",
+            "134°"
+          ],
+          "answerIndex": 3,
+          "explanation": "Straight line sums to 180°."
+        },
+        {
+          "id": "ks3-angles-q15",
+          "prompt": "16 − 8 =",
+          "options": [
+            "8",
+            "10",
+            "7",
+            "9"
+          ],
+          "answerIndex": 0,
+          "explanation": "16 minus 8 equals 8."
+        },
+        {
+          "id": "ks3-angles-q16",
+          "prompt": "Angles on a straight line: 63° and ?",
+          "options": [
+            "117°",
+            "127°",
+            "107°",
+            "90°"
+          ],
+          "answerIndex": 0,
+          "explanation": "Straight line sums to 180°."
+        },
+        {
+          "id": "ks3-angles-q17",
+          "prompt": "Angles on a straight line: 74° and ?",
+          "options": [
+            "116°",
+            "90°",
+            "106°",
+            "96°"
+          ],
+          "answerIndex": 2,
+          "explanation": "Straight line sums to 180°."
+        },
+        {
+          "id": "ks3-angles-q18",
+          "prompt": "Angles on a straight line: 66° and ?",
+          "options": [
+            "124°",
+            "90°",
+            "114°",
+            "104°"
+          ],
+          "answerIndex": 2,
+          "explanation": "Straight line sums to 180°."
+        },
+        {
+          "id": "ks3-angles-q19",
+          "prompt": "5 ÷ 1 =",
+          "options": [
+            "6",
+            "7",
+            "4",
+            "5"
+          ],
+          "answerIndex": 3,
+          "explanation": "5 divided by 1 is 5."
+        },
+        {
+          "id": "ks3-angles-q20",
+          "prompt": "Angles on a straight line: 69° and ?",
+          "options": [
+            "101°",
+            "90°",
+            "111°",
+            "121°"
+          ],
+          "answerIndex": 2,
+          "explanation": "Straight line sums to 180°."
         }
       ]
     },
@@ -3904,6 +6176,126 @@ export const topicsByStage = {
           ],
           "answerIndex": 0,
           "explanation": "Stem 3, leaves 2,5,7."
+        },
+        {
+          "id": "ks3-statistics-q11",
+          "prompt": "Mean of 5, 7, 9, 11, 13?",
+          "options": [
+            "10",
+            "11",
+            "9",
+            "8"
+          ],
+          "answerIndex": 2,
+          "explanation": "Add and divide by 5."
+        },
+        {
+          "id": "ks3-statistics-q12",
+          "prompt": "Mean of 3, 5, 7, 9, 11?",
+          "options": [
+            "8",
+            "9",
+            "7",
+            "6"
+          ],
+          "answerIndex": 2,
+          "explanation": "Add and divide by 5."
+        },
+        {
+          "id": "ks3-statistics-q13",
+          "prompt": "Mean of 2, 4, 6, 8, 10?",
+          "options": [
+            "6",
+            "7",
+            "5",
+            "8"
+          ],
+          "answerIndex": 0,
+          "explanation": "Add and divide by 5."
+        },
+        {
+          "id": "ks3-statistics-q14",
+          "prompt": "Mean of 6, 8, 10, 12, 14?",
+          "options": [
+            "10",
+            "11",
+            "9",
+            "12"
+          ],
+          "answerIndex": 0,
+          "explanation": "Add and divide by 5."
+        },
+        {
+          "id": "ks3-statistics-q15",
+          "prompt": "2 + 4 =",
+          "options": [
+            "5",
+            "8",
+            "7",
+            "6"
+          ],
+          "answerIndex": 3,
+          "explanation": "2 plus 4 equals 6."
+        },
+        {
+          "id": "ks3-statistics-q16",
+          "prompt": "Mean of 1, 3, 5, 7, 9?",
+          "options": [
+            "6",
+            "7",
+            "4",
+            "5"
+          ],
+          "answerIndex": 3,
+          "explanation": "Add and divide by 5."
+        },
+        {
+          "id": "ks3-statistics-q17",
+          "prompt": "10 + 7 =",
+          "options": [
+            "17",
+            "16",
+            "18",
+            "19"
+          ],
+          "answerIndex": 0,
+          "explanation": "10 plus 7 equals 17."
+        },
+        {
+          "id": "ks3-statistics-q18",
+          "prompt": "4 − -2 =",
+          "options": [
+            "7",
+            "8",
+            "6",
+            "5"
+          ],
+          "answerIndex": 2,
+          "explanation": "4 minus -2 equals 6."
+        },
+        {
+          "id": "ks3-statistics-q19",
+          "prompt": "5 + -4 =",
+          "options": [
+            "1",
+            "3",
+            "2",
+            "0"
+          ],
+          "answerIndex": 0,
+          "explanation": "5 plus -4 equals 1."
+        },
+        {
+          "id": "ks3-statistics-q20",
+          "prompt": "Mean of 4, 6, 8, 10, 12?",
+          "options": [
+            "7",
+            "9",
+            "8",
+            "10"
+          ],
+          "answerIndex": 2,
+          "explanation": "Add and divide by 5."
         }
       ]
     },
@@ -4098,6 +6490,126 @@ export const topicsByStage = {
           ],
           "answerIndex": 1,
           "explanation": "1/10=10%."
+        },
+        {
+          "id": "ks3-percentages-q11",
+          "prompt": "90% of 90?",
+          "options": [
+            "91",
+            "40.5",
+            "81",
+            "71"
+          ],
+          "answerIndex": 2,
+          "explanation": "90% = 90/100 × 90."
+        },
+        {
+          "id": "ks3-percentages-q12",
+          "prompt": "10% of 10?",
+          "options": [
+            "11",
+            "0.5",
+            "1",
+            "-9"
+          ],
+          "answerIndex": 2,
+          "explanation": "10% = 10/100 × 10."
+        },
+        {
+          "id": "ks3-percentages-q13",
+          "prompt": "9 − -8 =",
+          "options": [
+            "16",
+            "19",
+            "18",
+            "17"
+          ],
+          "answerIndex": 3,
+          "explanation": "9 minus -8 equals 17."
+        },
+        {
+          "id": "ks3-percentages-q14",
+          "prompt": "70% of 70?",
+          "options": [
+            "59",
+            "39",
+            "24.5",
+            "49"
+          ],
+          "answerIndex": 3,
+          "explanation": "70% = 70/100 × 70."
+        },
+        {
+          "id": "ks3-percentages-q15",
+          "prompt": "80% of 80?",
+          "options": [
+            "74",
+            "54",
+            "32",
+            "64"
+          ],
+          "answerIndex": 3,
+          "explanation": "80% = 80/100 × 80."
+        },
+        {
+          "id": "ks3-percentages-q16",
+          "prompt": "50% of 50?",
+          "options": [
+            "25",
+            "12.5",
+            "15",
+            "35"
+          ],
+          "answerIndex": 0,
+          "explanation": "50% = 50/100 × 50."
+        },
+        {
+          "id": "ks3-percentages-q17",
+          "prompt": "60% of 60?",
+          "options": [
+            "36",
+            "18",
+            "26",
+            "46"
+          ],
+          "answerIndex": 0,
+          "explanation": "60% = 60/100 × 60."
+        },
+        {
+          "id": "ks3-percentages-q18",
+          "prompt": "11 + -5 =",
+          "options": [
+            "7",
+            "5",
+            "6",
+            "8"
+          ],
+          "answerIndex": 2,
+          "explanation": "11 plus -5 equals 6."
+        },
+        {
+          "id": "ks3-percentages-q19",
+          "prompt": "30% of 30?",
+          "options": [
+            "9",
+            "19",
+            "-1",
+            "4.5"
+          ],
+          "answerIndex": 0,
+          "explanation": "30% = 30/100 × 30."
+        },
+        {
+          "id": "ks3-percentages-q20",
+          "prompt": "4 − 2 =",
+          "options": [
+            "3",
+            "2",
+            "4",
+            "1"
+          ],
+          "answerIndex": 1,
+          "explanation": "4 minus 2 equals 2."
         }
       ]
     },
@@ -4292,6 +6804,126 @@ export const topicsByStage = {
           ],
           "answerIndex": 1,
           "explanation": "4x=12, x=3."
+        },
+        {
+          "id": "ks3-equations-q11",
+          "prompt": "Solve: 2x + 1 = 13",
+          "options": [
+            "7",
+            "5",
+            "8",
+            "6"
+          ],
+          "answerIndex": 3,
+          "explanation": "Isolate x to get 6."
+        },
+        {
+          "id": "ks3-equations-q12",
+          "prompt": "Solve: 3x + 5 = 23",
+          "options": [
+            "7",
+            "5",
+            "8",
+            "6"
+          ],
+          "answerIndex": 3,
+          "explanation": "Isolate x to get 6."
+        },
+        {
+          "id": "ks3-equations-q13",
+          "prompt": "Solve: 6x + 1 = 19",
+          "options": [
+            "3",
+            "5",
+            "2",
+            "4"
+          ],
+          "answerIndex": 0,
+          "explanation": "Isolate x to get 3."
+        },
+        {
+          "id": "ks3-equations-q14",
+          "prompt": "Solve: 3x + 5 = 14",
+          "options": [
+            "3",
+            "5",
+            "2",
+            "4"
+          ],
+          "answerIndex": 0,
+          "explanation": "Isolate x to get 3."
+        },
+        {
+          "id": "ks3-equations-q15",
+          "prompt": "6 − -4 =",
+          "options": [
+            "12",
+            "10",
+            "11",
+            "9"
+          ],
+          "answerIndex": 1,
+          "explanation": "6 minus -4 equals 10."
+        },
+        {
+          "id": "ks3-equations-q16",
+          "prompt": "Solve: -2x + 1 = -15",
+          "options": [
+            "9",
+            "10",
+            "8",
+            "7"
+          ],
+          "answerIndex": 2,
+          "explanation": "Isolate x to get 8."
+        },
+        {
+          "id": "ks3-equations-q17",
+          "prompt": "Solve: 2x + 3 = 19",
+          "options": [
+            "9",
+            "10",
+            "8",
+            "7"
+          ],
+          "answerIndex": 2,
+          "explanation": "Isolate x to get 8."
+        },
+        {
+          "id": "ks3-equations-q18",
+          "prompt": "Solve: -1x + 3 = -6",
+          "options": [
+            "9",
+            "10",
+            "8",
+            "11"
+          ],
+          "answerIndex": 0,
+          "explanation": "Isolate x to get 9."
+        },
+        {
+          "id": "ks3-equations-q19",
+          "prompt": "Solve: 1x + 2 = 11",
+          "options": [
+            "9",
+            "10",
+            "8",
+            "11"
+          ],
+          "answerIndex": 0,
+          "explanation": "Isolate x to get 9."
+        },
+        {
+          "id": "ks3-equations-q20",
+          "prompt": "3 + 12 =",
+          "options": [
+            "15",
+            "17",
+            "16",
+            "14"
+          ],
+          "answerIndex": 0,
+          "explanation": "3 plus 12 equals 15."
         }
       ]
     }
@@ -4492,6 +7124,119 @@ export const topicsByStage = {
           ],
           "answerIndex": 1,
           "explanation": "2x<8, x<4."
+        },
+        {
+          "id": "ks4-gcse-foundation-q11",
+          "prompt": "15² =",
+          "options": [
+            "225",
+            "240",
+            "210"
+          ],
+          "answerIndex": 0,
+          "explanation": "15 × 15 = 225."
+        },
+        {
+          "id": "ks4-gcse-foundation-q12",
+          "prompt": "19² =",
+          "options": [
+            "361",
+            "342",
+            "380"
+          ],
+          "answerIndex": 0,
+          "explanation": "19 × 19 = 361."
+        },
+        {
+          "id": "ks4-gcse-foundation-q13",
+          "prompt": "10² =",
+          "options": [
+            "110",
+            "100",
+            "90"
+          ],
+          "answerIndex": 1,
+          "explanation": "10 × 10 = 100."
+        },
+        {
+          "id": "ks4-gcse-foundation-q14",
+          "prompt": "14² =",
+          "options": [
+            "182",
+            "196",
+            "210"
+          ],
+          "answerIndex": 1,
+          "explanation": "14 × 14 = 196."
+        },
+        {
+          "id": "ks4-gcse-foundation-q15",
+          "prompt": "11 + 13 =",
+          "options": [
+            "25",
+            "26",
+            "23",
+            "24"
+          ],
+          "answerIndex": 3,
+          "explanation": "11 plus 13 equals 24."
+        },
+        {
+          "id": "ks4-gcse-foundation-q16",
+          "prompt": "11² =",
+          "options": [
+            "121",
+            "110",
+            "132"
+          ],
+          "answerIndex": 0,
+          "explanation": "11 × 11 = 121."
+        },
+        {
+          "id": "ks4-gcse-foundation-q17",
+          "prompt": "8 ÷ -8 =",
+          "options": [
+            "-1",
+            "-2",
+            "0",
+            "1"
+          ],
+          "answerIndex": 0,
+          "explanation": "8 divided by -8 is -1."
+        },
+        {
+          "id": "ks4-gcse-foundation-q18",
+          "prompt": "8² =",
+          "options": [
+            "64",
+            "72",
+            "56"
+          ],
+          "answerIndex": 0,
+          "explanation": "8 × 8 = 64."
+        },
+        {
+          "id": "ks4-gcse-foundation-q19",
+          "prompt": "16² =",
+          "options": [
+            "272",
+            "240",
+            "256"
+          ],
+          "answerIndex": 2,
+          "explanation": "16 × 16 = 256."
+        },
+        {
+          "id": "ks4-gcse-foundation-q20",
+          "prompt": "16 − 11 =",
+          "options": [
+            "6",
+            "7",
+            "5",
+            "4"
+          ],
+          "answerIndex": 2,
+          "explanation": "16 minus 11 equals 5."
         }
       ]
     },
@@ -4690,6 +7435,122 @@ export const topicsByStage = {
           ],
           "answerIndex": 1,
           "explanation": "General proof uses 2n+1."
+        },
+        {
+          "id": "ks4-gcse-higher-q11",
+          "prompt": "Simplify √((4)²(-3)²)",
+          "options": [
+            "2",
+            "-11",
+            "1",
+            "-12"
+          ],
+          "answerIndex": 3,
+          "explanation": "√(a²b²) = -12."
+        },
+        {
+          "id": "ks4-gcse-higher-q12",
+          "prompt": "Simplify √((1)²(0)²)",
+          "options": [
+            "2",
+            "1",
+            "0"
+          ],
+          "answerIndex": 2,
+          "explanation": "√(a²b²) = 0."
+        },
+        {
+          "id": "ks4-gcse-higher-q13",
+          "prompt": "Simplify √((2)²(-1)²)",
+          "options": [
+            "2",
+            "-1",
+            "-2",
+            "1"
+          ],
+          "answerIndex": 2,
+          "explanation": "√(a²b²) = -2."
+        },
+        {
+          "id": "ks4-gcse-higher-q14",
+          "prompt": "Simplify √((4)²(0)²)",
+          "options": [
+            "5",
+            "1",
+            "0",
+            "4"
+          ],
+          "answerIndex": 2,
+          "explanation": "√(a²b²) = 0."
+        },
+        {
+          "id": "ks4-gcse-higher-q15",
+          "prompt": "13 − -1 =",
+          "options": [
+            "15",
+            "16",
+            "14",
+            "13"
+          ],
+          "answerIndex": 2,
+          "explanation": "13 minus -1 equals 14."
+        },
+        {
+          "id": "ks4-gcse-higher-q16",
+          "prompt": "Simplify √((3)²(5)²)",
+          "options": [
+            "8",
+            "16",
+            "15",
+            "9"
+          ],
+          "answerIndex": 2,
+          "explanation": "√(a²b²) = 15."
+        },
+        {
+          "id": "ks4-gcse-higher-q17",
+          "prompt": "Simplify √((2)²(2)²)",
+          "options": [
+            "5",
+            "4"
+          ],
+          "answerIndex": 1,
+          "explanation": "√(a²b²) = 4."
+        },
+        {
+          "id": "ks4-gcse-higher-q18",
+          "prompt": "Simplify √((3)²(1)²)",
+          "options": [
+            "4",
+            "5",
+            "3"
+          ],
+          "answerIndex": 2,
+          "explanation": "√(a²b²) = 3."
+        },
+        {
+          "id": "ks4-gcse-higher-q19",
+          "prompt": "Simplify √((5)²(5)²)",
+          "options": [
+            "11",
+            "10",
+            "25",
+            "26"
+          ],
+          "answerIndex": 2,
+          "explanation": "√(a²b²) = 25."
+        },
+        {
+          "id": "ks4-gcse-higher-q20",
+          "prompt": "4 ÷ 1 =",
+          "options": [
+            "3",
+            "6",
+            "4",
+            "5"
+          ],
+          "answerIndex": 2,
+          "explanation": "4 divided by 1 is 4."
         }
       ]
     },
@@ -4904,6 +7765,126 @@ export const topicsByStage = {
           ],
           "answerIndex": 1,
           "explanation": "tan=sin/cos, cos=adj/hyp."
+        },
+        {
+          "id": "ks4-trigonometry-q11",
+          "prompt": "Opposite 6, hypotenuse 9.",
+          "options": [
+            "tan θ = 6/9",
+            "cos θ = 6/9",
+            "sin θ = 6/9",
+            "sin θ = 9/6"
+          ],
+          "answerIndex": 2,
+          "explanation": "sin = opposite/hypotenuse."
+        },
+        {
+          "id": "ks4-trigonometry-q12",
+          "prompt": "Opposite 3, hypotenuse 5.",
+          "options": [
+            "cos θ = 3/5",
+            "tan θ = 3/5",
+            "sin θ = 5/3",
+            "sin θ = 3/5"
+          ],
+          "answerIndex": 3,
+          "explanation": "sin = opposite/hypotenuse."
+        },
+        {
+          "id": "ks4-trigonometry-q13",
+          "prompt": "3 − -7 =",
+          "options": [
+            "10",
+            "12",
+            "9",
+            "11"
+          ],
+          "answerIndex": 0,
+          "explanation": "3 minus -7 equals 10."
+        },
+        {
+          "id": "ks4-trigonometry-q14",
+          "prompt": "Opposite 6, hypotenuse 10.",
+          "options": [
+            "sin θ = 6/10",
+            "tan θ = 6/10",
+            "cos θ = 6/10",
+            "sin θ = 10/6"
+          ],
+          "answerIndex": 0,
+          "explanation": "sin = opposite/hypotenuse."
+        },
+        {
+          "id": "ks4-trigonometry-q15",
+          "prompt": "Opposite 5, hypotenuse 9.",
+          "options": [
+            "cos θ = 5/9",
+            "sin θ = 5/9",
+            "sin θ = 9/5",
+            "tan θ = 5/9"
+          ],
+          "answerIndex": 1,
+          "explanation": "sin = opposite/hypotenuse."
+        },
+        {
+          "id": "ks4-trigonometry-q16",
+          "prompt": "Opposite 5, hypotenuse 7.",
+          "options": [
+            "cos θ = 5/7",
+            "sin θ = 5/7",
+            "sin θ = 7/5",
+            "tan θ = 5/7"
+          ],
+          "answerIndex": 1,
+          "explanation": "sin = opposite/hypotenuse."
+        },
+        {
+          "id": "ks4-trigonometry-q17",
+          "prompt": "12 + -9 =",
+          "options": [
+            "2",
+            "5",
+            "4",
+            "3"
+          ],
+          "answerIndex": 3,
+          "explanation": "12 plus -9 equals 3."
+        },
+        {
+          "id": "ks4-trigonometry-q18",
+          "prompt": "Opposite 4, hypotenuse 7.",
+          "options": [
+            "sin θ = 4/7",
+            "tan θ = 4/7",
+            "sin θ = 7/4",
+            "cos θ = 4/7"
+          ],
+          "answerIndex": 0,
+          "explanation": "sin = opposite/hypotenuse."
+        },
+        {
+          "id": "ks4-trigonometry-q19",
+          "prompt": "Opposite 3, hypotenuse 6.",
+          "options": [
+            "cos θ = 3/6",
+            "sin θ = 6/3",
+            "tan θ = 3/6",
+            "sin θ = 3/6"
+          ],
+          "answerIndex": 3,
+          "explanation": "sin = opposite/hypotenuse."
+        },
+        {
+          "id": "ks4-trigonometry-q20",
+          "prompt": "8 ÷ 8 =",
+          "options": [
+            "1",
+            "3",
+            "0",
+            "2"
+          ],
+          "answerIndex": 0,
+          "explanation": "8 divided by 8 is 1."
         }
       ]
     },
@@ -5098,6 +8079,126 @@ export const topicsByStage = {
           ],
           "answerIndex": 2,
           "explanation": "Check: still 7."
+        },
+        {
+          "id": "ks4-simultaneous-equations-q11",
+          "prompt": "x + y = 3, x − y = 3. Solution?",
+          "options": [
+            "x = 3, y = 0",
+            "x = 0, y = 3",
+            "x = 4, y = 0",
+            "x = 3, y = 1"
+          ],
+          "answerIndex": 0,
+          "explanation": "Add/subtract equations."
+        },
+        {
+          "id": "ks4-simultaneous-equations-q12",
+          "prompt": "x + y = 5, x − y = 5. Solution?",
+          "options": [
+            "x = 5, y = 0",
+            "x = 6, y = 0",
+            "x = 0, y = 5",
+            "x = 5, y = 1"
+          ],
+          "answerIndex": 0,
+          "explanation": "Add/subtract equations."
+        },
+        {
+          "id": "ks4-simultaneous-equations-q13",
+          "prompt": "x + y = 5, x − y = -3. Solution?",
+          "options": [
+            "x = 4, y = 1",
+            "x = 1, y = 5",
+            "x = 2, y = 4",
+            "x = 1, y = 4"
+          ],
+          "answerIndex": 3,
+          "explanation": "Add/subtract equations."
+        },
+        {
+          "id": "ks4-simultaneous-equations-q14",
+          "prompt": "x + y = 8, x − y = 2. Solution?",
+          "options": [
+            "x = 3, y = 5",
+            "x = 5, y = 4",
+            "x = 6, y = 3",
+            "x = 5, y = 3"
+          ],
+          "answerIndex": 3,
+          "explanation": "Add/subtract equations."
+        },
+        {
+          "id": "ks4-simultaneous-equations-q15",
+          "prompt": "14 − -1 =",
+          "options": [
+            "14",
+            "17",
+            "15",
+            "16"
+          ],
+          "answerIndex": 2,
+          "explanation": "14 minus -1 equals 15."
+        },
+        {
+          "id": "ks4-simultaneous-equations-q16",
+          "prompt": "x + y = 3, x − y = 1. Solution?",
+          "options": [
+            "x = 2, y = 1",
+            "x = 1, y = 2",
+            "x = 3, y = 1",
+            "x = 2, y = 2"
+          ],
+          "answerIndex": 0,
+          "explanation": "Add/subtract equations."
+        },
+        {
+          "id": "ks4-simultaneous-equations-q17",
+          "prompt": "x + y = 7, x − y = -1. Solution?",
+          "options": [
+            "x = 4, y = 3",
+            "x = 3, y = 5",
+            "x = 3, y = 4",
+            "x = 4, y = 4"
+          ],
+          "answerIndex": 2,
+          "explanation": "Add/subtract equations."
+        },
+        {
+          "id": "ks4-simultaneous-equations-q18",
+          "prompt": "x + y = 7, x − y = 3. Solution?",
+          "options": [
+            "x = 2, y = 5",
+            "x = 5, y = 3",
+            "x = 5, y = 2",
+            "x = 6, y = 2"
+          ],
+          "answerIndex": 2,
+          "explanation": "Add/subtract equations."
+        },
+        {
+          "id": "ks4-simultaneous-equations-q19",
+          "prompt": "13 + 4 =",
+          "options": [
+            "16",
+            "19",
+            "18",
+            "17"
+          ],
+          "answerIndex": 3,
+          "explanation": "13 plus 4 equals 17."
+        },
+        {
+          "id": "ks4-simultaneous-equations-q20",
+          "prompt": "x + y = 1, x − y = 3. Solution?",
+          "options": [
+            "x = 2, y = -1",
+            "x = 2, y = 0",
+            "x = 3, y = -1",
+            "x = -1, y = 2"
+          ],
+          "answerIndex": 0,
+          "explanation": "Add/subtract equations."
         }
       ]
     },
@@ -5292,6 +8393,126 @@ export const topicsByStage = {
           ],
           "answerIndex": 0,
           "explanation": "x²=9."
+        },
+        {
+          "id": "ks4-quadratics-q11",
+          "prompt": "Factor x² − 2x + -3",
+          "options": [
+            "(x − 3)(x − -1)",
+            "(x + 3)(x + -1)",
+            "(x − 2)",
+            "(x − -3)"
+          ],
+          "answerIndex": 0,
+          "explanation": "Roots 3 and -1."
+        },
+        {
+          "id": "ks4-quadratics-q12",
+          "prompt": "Factor x² − 6x + 5",
+          "options": [
+            "(x − 5)(x − 1)",
+            "(x − 6)",
+            "(x + 5)(x + 1)",
+            "(x − 5)"
+          ],
+          "answerIndex": 0,
+          "explanation": "Roots 5 and 1."
+        },
+        {
+          "id": "ks4-quadratics-q13",
+          "prompt": "Factor x² − 8x + 15",
+          "options": [
+            "(x − 8)",
+            "(x − 15)",
+            "(x + 5)(x + 3)",
+            "(x − 5)(x − 3)"
+          ],
+          "answerIndex": 3,
+          "explanation": "Roots 5 and 3."
+        },
+        {
+          "id": "ks4-quadratics-q14",
+          "prompt": "Factor x² − 7x + 12",
+          "options": [
+            "(x − 7)",
+            "(x − 12)",
+            "(x + 4)(x + 3)",
+            "(x − 4)(x − 3)"
+          ],
+          "answerIndex": 3,
+          "explanation": "Roots 4 and 3."
+        },
+        {
+          "id": "ks4-quadratics-q15",
+          "prompt": "3 − -5 =",
+          "options": [
+            "7",
+            "10",
+            "8",
+            "9"
+          ],
+          "answerIndex": 2,
+          "explanation": "3 minus -5 equals 8."
+        },
+        {
+          "id": "ks4-quadratics-q16",
+          "prompt": "Factor x² − 7x + 10",
+          "options": [
+            "(x − 5)(x − 2)",
+            "(x − 7)",
+            "(x + 5)(x + 2)",
+            "(x − 10)"
+          ],
+          "answerIndex": 0,
+          "explanation": "Roots 5 and 2."
+        },
+        {
+          "id": "ks4-quadratics-q17",
+          "prompt": "Factor x² − 3x + 2",
+          "options": [
+            "(x − 2)(x − 1)",
+            "(x − 3)",
+            "(x + 2)(x + 1)",
+            "(x − 2)"
+          ],
+          "answerIndex": 0,
+          "explanation": "Roots 2 and 1."
+        },
+        {
+          "id": "ks4-quadratics-q18",
+          "prompt": "Factor x² − -1x + -2",
+          "options": [
+            "(x − -2)",
+            "(x − 1)(x − -2)",
+            "(x + 1)(x + -2)",
+            "(x − -1)"
+          ],
+          "answerIndex": 1,
+          "explanation": "Roots 1 and -2."
+        },
+        {
+          "id": "ks4-quadratics-q19",
+          "prompt": "11 + 4 =",
+          "options": [
+            "16",
+            "17",
+            "14",
+            "15"
+          ],
+          "answerIndex": 3,
+          "explanation": "11 plus 4 equals 15."
+        },
+        {
+          "id": "ks4-quadratics-q20",
+          "prompt": "Factor x² − 1x + -12",
+          "options": [
+            "(x − 4)(x − -3)",
+            "(x − -12)",
+            "(x − 1)",
+            "(x + 4)(x + -3)"
+          ],
+          "answerIndex": 0,
+          "explanation": "Roots 4 and -3."
         }
       ]
     },
@@ -5486,6 +8707,125 @@ export const topicsByStage = {
           ],
           "answerIndex": 1,
           "explanation": "f(0)=1."
+        },
+        {
+          "id": "ks4-functions-q11",
+          "prompt": "f(x) = x² + -1, f(2) =",
+          "options": [
+            "1",
+            "3",
+            "4"
+          ],
+          "answerIndex": 1,
+          "explanation": "2² + -1 = 3."
+        },
+        {
+          "id": "ks4-functions-q12",
+          "prompt": "f(x) = x² + 1, f(2) =",
+          "options": [
+            "5",
+            "3",
+            "4",
+            "6"
+          ],
+          "answerIndex": 0,
+          "explanation": "2² + 1 = 5."
+        },
+        {
+          "id": "ks4-functions-q13",
+          "prompt": "f(x) = x² + 2, f(7) =",
+          "options": [
+            "52",
+            "51",
+            "9",
+            "14"
+          ],
+          "answerIndex": 1,
+          "explanation": "7² + 2 = 51."
+        },
+        {
+          "id": "ks4-functions-q14",
+          "prompt": "f(x) = x² + 0, f(7) =",
+          "options": [
+            "50",
+            "49",
+            "7",
+            "14"
+          ],
+          "answerIndex": 1,
+          "explanation": "7² + 0 = 49."
+        },
+        {
+          "id": "ks4-functions-q15",
+          "prompt": "10 − -5 =",
+          "options": [
+            "14",
+            "16",
+            "15",
+            "17"
+          ],
+          "answerIndex": 2,
+          "explanation": "10 minus -5 equals 15."
+        },
+        {
+          "id": "ks4-functions-q16",
+          "prompt": "f(x) = x² + 0, f(6) =",
+          "options": [
+            "12",
+            "6",
+            "36",
+            "37"
+          ],
+          "answerIndex": 2,
+          "explanation": "6² + 0 = 36."
+        },
+        {
+          "id": "ks4-functions-q17",
+          "prompt": "f(x) = x² + -1, f(6) =",
+          "options": [
+            "35",
+            "12",
+            "5",
+            "36"
+          ],
+          "answerIndex": 0,
+          "explanation": "6² + -1 = 35."
+        },
+        {
+          "id": "ks4-functions-q18",
+          "prompt": "f(x) = x² + -2, f(5) =",
+          "options": [
+            "10",
+            "3",
+            "24",
+            "23"
+          ],
+          "answerIndex": 3,
+          "explanation": "5² + -2 = 23."
+        },
+        {
+          "id": "ks4-functions-q19",
+          "prompt": "6 ÷ -3 =",
+          "options": [
+            "-1",
+            "-2",
+            "0",
+            "-3"
+          ],
+          "answerIndex": 1,
+          "explanation": "6 divided by -3 is -2."
+        },
+        {
+          "id": "ks4-functions-q20",
+          "prompt": "f(x) = x² + 3, f(8) =",
+          "options": [
+            "67",
+            "16",
+            "68",
+            "11"
+          ],
+          "answerIndex": 0,
+          "explanation": "8² + 3 = 67."
         }
       ]
     },
@@ -5680,6 +9020,126 @@ export const topicsByStage = {
           ],
           "answerIndex": 0,
           "explanation": "Add vectors."
+        },
+        {
+          "id": "ks4-vectors-q11",
+          "prompt": "(2,3) + (3,0) =",
+          "options": [
+            "(3, 0)",
+            "(5, 3)",
+            "(5, 0)",
+            "(6, 0)"
+          ],
+          "answerIndex": 1,
+          "explanation": "Add components separately."
+        },
+        {
+          "id": "ks4-vectors-q12",
+          "prompt": "(2,3) + (3,1) =",
+          "options": [
+            "(3, 1)",
+            "(5, 4)",
+            "(5, 1)",
+            "(6, 2)"
+          ],
+          "answerIndex": 1,
+          "explanation": "Add components separately."
+        },
+        {
+          "id": "ks4-vectors-q13",
+          "prompt": "(2,3) + (4,2) =",
+          "options": [
+            "(6, 5)",
+            "(8, 4)",
+            "(4, 2)",
+            "(6, 2)"
+          ],
+          "answerIndex": 0,
+          "explanation": "Add components separately."
+        },
+        {
+          "id": "ks4-vectors-q14",
+          "prompt": "(2,3) + (4,3) =",
+          "options": [
+            "(6, 6)",
+            "(4, 3)",
+            "(8, 6)",
+            "(6, 3)"
+          ],
+          "answerIndex": 0,
+          "explanation": "Add components separately."
+        },
+        {
+          "id": "ks4-vectors-q15",
+          "prompt": "15 − -1 =",
+          "options": [
+            "17",
+            "15",
+            "18",
+            "16"
+          ],
+          "answerIndex": 3,
+          "explanation": "15 minus -1 equals 16."
+        },
+        {
+          "id": "ks4-vectors-q16",
+          "prompt": "(2,3) + (1,-2) =",
+          "options": [
+            "(1, -2)",
+            "(3, -2)",
+            "(2, -4)",
+            "(3, 1)"
+          ],
+          "answerIndex": 3,
+          "explanation": "Add components separately."
+        },
+        {
+          "id": "ks4-vectors-q17",
+          "prompt": "(2,3) + (1,-1) =",
+          "options": [
+            "(1, -1)",
+            "(3, -1)",
+            "(2, -2)",
+            "(3, 2)"
+          ],
+          "answerIndex": 3,
+          "explanation": "Add components separately."
+        },
+        {
+          "id": "ks4-vectors-q18",
+          "prompt": "(2,3) + (2,4) =",
+          "options": [
+            "(4, 8)",
+            "(4, 4)",
+            "(4, 7)",
+            "(2, 4)"
+          ],
+          "answerIndex": 2,
+          "explanation": "Add components separately."
+        },
+        {
+          "id": "ks4-vectors-q19",
+          "prompt": "14 + 3 =",
+          "options": [
+            "17",
+            "16",
+            "18",
+            "19"
+          ],
+          "answerIndex": 0,
+          "explanation": "14 plus 3 equals 17."
+        },
+        {
+          "id": "ks4-vectors-q20",
+          "prompt": "(2,3) + (4,1) =",
+          "options": [
+            "(6, 4)",
+            "(4, 1)",
+            "(8, 2)",
+            "(6, 1)"
+          ],
+          "answerIndex": 0,
+          "explanation": "Add components separately."
         }
       ]
     },
@@ -5874,6 +9334,126 @@ export const topicsByStage = {
           ],
           "answerIndex": 1,
           "explanation": "Long tail on higher values."
+        },
+        {
+          "id": "ks4-histograms-q11",
+          "prompt": "Frequency 8, class width 2. FD =",
+          "options": [
+            "4",
+            "6",
+            "8",
+            "2"
+          ],
+          "answerIndex": 0,
+          "explanation": "FD = frequency ÷ width."
+        },
+        {
+          "id": "ks4-histograms-q12",
+          "prompt": "Frequency 12, class width 3. FD =",
+          "options": [
+            "12",
+            "6",
+            "4",
+            "3"
+          ],
+          "answerIndex": 2,
+          "explanation": "FD = frequency ÷ width."
+        },
+        {
+          "id": "ks4-histograms-q13",
+          "prompt": "Frequency 18, class width 3. FD =",
+          "options": [
+            "8",
+            "3",
+            "18",
+            "6"
+          ],
+          "answerIndex": 3,
+          "explanation": "FD = frequency ÷ width."
+        },
+        {
+          "id": "ks4-histograms-q14",
+          "prompt": "Frequency 15, class width 3. FD =",
+          "options": [
+            "7",
+            "3",
+            "15",
+            "5"
+          ],
+          "answerIndex": 3,
+          "explanation": "FD = frequency ÷ width."
+        },
+        {
+          "id": "ks4-histograms-q15",
+          "prompt": "5 − -5 =",
+          "options": [
+            "10",
+            "9",
+            "12",
+            "11"
+          ],
+          "answerIndex": 0,
+          "explanation": "5 minus -5 equals 10."
+        },
+        {
+          "id": "ks4-histograms-q16",
+          "prompt": "Frequency 17, class width 2. FD =",
+          "options": [
+            "17",
+            "10.5",
+            "8.5",
+            "2"
+          ],
+          "answerIndex": 2,
+          "explanation": "FD = frequency ÷ width."
+        },
+        {
+          "id": "ks4-histograms-q17",
+          "prompt": "Frequency 6, class width 3. FD =",
+          "options": [
+            "6",
+            "4",
+            "2",
+            "3"
+          ],
+          "answerIndex": 2,
+          "explanation": "FD = frequency ÷ width."
+        },
+        {
+          "id": "ks4-histograms-q18",
+          "prompt": "Frequency 19, class width 4. FD =",
+          "options": [
+            "6.75",
+            "4",
+            "4.75",
+            "19"
+          ],
+          "answerIndex": 2,
+          "explanation": "FD = frequency ÷ width."
+        },
+        {
+          "id": "ks4-histograms-q19",
+          "prompt": "16 ÷ 1 =",
+          "options": [
+            "17",
+            "18",
+            "15",
+            "16"
+          ],
+          "answerIndex": 3,
+          "explanation": "16 divided by 1 is 16."
+        },
+        {
+          "id": "ks4-histograms-q20",
+          "prompt": "Frequency 14, class width 2. FD =",
+          "options": [
+            "14",
+            "2",
+            "7",
+            "9"
+          ],
+          "answerIndex": 2,
+          "explanation": "FD = frequency ÷ width."
         }
       ]
     },
@@ -6068,6 +9648,126 @@ export const topicsByStage = {
           ],
           "answerIndex": 2,
           "explanation": "Radius perpendicular to tangent."
+        },
+        {
+          "id": "ks4-circle-theorems-q11",
+          "prompt": "Angle at centre is 88°. Angle at circumference on same arc?",
+          "options": [
+            "46°",
+            "88°",
+            "136°",
+            "44°"
+          ],
+          "answerIndex": 3,
+          "explanation": "Angle at centre is twice angle at circumference."
+        },
+        {
+          "id": "ks4-circle-theorems-q12",
+          "prompt": "Angle at centre is 136°. Angle at circumference on same arc?",
+          "options": [
+            "22°",
+            "136°",
+            "112°",
+            "68°"
+          ],
+          "answerIndex": 3,
+          "explanation": "Angle at centre is twice angle at circumference."
+        },
+        {
+          "id": "ks4-circle-theorems-q13",
+          "prompt": "Angle at centre is 146°. Angle at circumference on same arc?",
+          "options": [
+            "73°",
+            "17°",
+            "146°",
+            "107°"
+          ],
+          "answerIndex": 0,
+          "explanation": "Angle at centre is twice angle at circumference."
+        },
+        {
+          "id": "ks4-circle-theorems-q14",
+          "prompt": "Angle at centre is 114°. Angle at circumference on same arc?",
+          "options": [
+            "57°",
+            "114°",
+            "33°",
+            "123°"
+          ],
+          "answerIndex": 0,
+          "explanation": "Angle at centre is twice angle at circumference."
+        },
+        {
+          "id": "ks4-circle-theorems-q15",
+          "prompt": "9 − -3 =",
+          "options": [
+            "13",
+            "12",
+            "14",
+            "11"
+          ],
+          "answerIndex": 1,
+          "explanation": "9 minus -3 equals 12."
+        },
+        {
+          "id": "ks4-circle-theorems-q16",
+          "prompt": "Angle at centre is 92°. Angle at circumference on same arc?",
+          "options": [
+            "92°",
+            "46°",
+            "134°",
+            "44°"
+          ],
+          "answerIndex": 1,
+          "explanation": "Angle at centre is twice angle at circumference."
+        },
+        {
+          "id": "ks4-circle-theorems-q17",
+          "prompt": "Angle at centre is 156°. Angle at circumference on same arc?",
+          "options": [
+            "156°",
+            "78°",
+            "102°",
+            "12°"
+          ],
+          "answerIndex": 1,
+          "explanation": "Angle at centre is twice angle at circumference."
+        },
+        {
+          "id": "ks4-circle-theorems-q18",
+          "prompt": "Angle at centre is 126°. Angle at circumference on same arc?",
+          "options": [
+            "63°",
+            "117°",
+            "27°",
+            "126°"
+          ],
+          "answerIndex": 0,
+          "explanation": "Angle at centre is twice angle at circumference."
+        },
+        {
+          "id": "ks4-circle-theorems-q19",
+          "prompt": "Angle at centre is 94°. Angle at circumference on same arc?",
+          "options": [
+            "47°",
+            "133°",
+            "43°",
+            "94°"
+          ],
+          "answerIndex": 0,
+          "explanation": "Angle at centre is twice angle at circumference."
+        },
+        {
+          "id": "ks4-circle-theorems-q20",
+          "prompt": "15 + 4 =",
+          "options": [
+            "19",
+            "21",
+            "20",
+            "18"
+          ],
+          "answerIndex": 0,
+          "explanation": "15 plus 4 equals 19."
         }
       ]
     },
@@ -6262,6 +9962,125 @@ export const topicsByStage = {
           ],
           "answerIndex": 2,
           "explanation": "6 ways out of 36."
+        },
+        {
+          "id": "ks4-probability-trees-q11",
+          "prompt": "Two independent events each P = 4/9. P(both)?",
+          "options": [
+            "4/10",
+            "5/9",
+            "0.2",
+            "8/9"
+          ],
+          "answerIndex": 2,
+          "explanation": "Multiply: 4/9 × 4/9."
+        },
+        {
+          "id": "ks4-probability-trees-q12",
+          "prompt": "Two independent events each P = 1/3. P(both)?",
+          "options": [
+            "0.11",
+            "2/3",
+            "1/4"
+          ],
+          "answerIndex": 0,
+          "explanation": "Multiply: 1/3 × 1/3."
+        },
+        {
+          "id": "ks4-probability-trees-q13",
+          "prompt": "3 − 2 =",
+          "options": [
+            "1",
+            "3",
+            "0",
+            "2"
+          ],
+          "answerIndex": 0,
+          "explanation": "3 minus 2 equals 1."
+        },
+        {
+          "id": "ks4-probability-trees-q14",
+          "prompt": "Two independent events each P = 3/7. P(both)?",
+          "options": [
+            "6/7",
+            "0.18",
+            "4/7",
+            "3/8"
+          ],
+          "answerIndex": 1,
+          "explanation": "Multiply: 3/7 × 3/7."
+        },
+        {
+          "id": "ks4-probability-trees-q15",
+          "prompt": "7 + -8 =",
+          "options": [
+            "0",
+            "1",
+            "-2",
+            "-1"
+          ],
+          "answerIndex": 3,
+          "explanation": "7 plus -8 equals -1."
+        },
+        {
+          "id": "ks4-probability-trees-q16",
+          "prompt": "Two independent events each P = 2/5. P(both)?",
+          "options": [
+            "2/6",
+            "4/5",
+            "0.16",
+            "3/5"
+          ],
+          "answerIndex": 2,
+          "explanation": "Multiply: 2/5 × 2/5."
+        },
+        {
+          "id": "ks4-probability-trees-q17",
+          "prompt": "10 − -3 =",
+          "options": [
+            "12",
+            "15",
+            "13",
+            "14"
+          ],
+          "answerIndex": 2,
+          "explanation": "10 minus -3 equals 13."
+        },
+        {
+          "id": "ks4-probability-trees-q18",
+          "prompt": "2 + 11 =",
+          "options": [
+            "12",
+            "15",
+            "13",
+            "14"
+          ],
+          "answerIndex": 2,
+          "explanation": "2 plus 11 equals 13."
+        },
+        {
+          "id": "ks4-probability-trees-q19",
+          "prompt": "12 − 6 =",
+          "options": [
+            "6",
+            "5",
+            "7",
+            "8"
+          ],
+          "answerIndex": 0,
+          "explanation": "12 minus 6 equals 6."
+        },
+        {
+          "id": "ks4-probability-trees-q20",
+          "prompt": "11 + 8 =",
+          "options": [
+            "18",
+            "20",
+            "21",
+            "19"
+          ],
+          "answerIndex": 3,
+          "explanation": "11 plus 8 equals 19."
         }
       ]
     },
@@ -6456,6 +10275,126 @@ export const topicsByStage = {
           ],
           "answerIndex": 0,
           "explanation": "Divide each term by 2."
+        },
+        {
+          "id": "ks4-algebraic-fractions-q11",
+          "prompt": "Simplify (2x + -1x)/x² for x ≠ 0",
+          "options": [
+            "x/2",
+            "-1/x",
+            "2x",
+            "1/x"
+          ],
+          "answerIndex": 3,
+          "explanation": "Factor x in the numerator, cancel one x."
+        },
+        {
+          "id": "ks4-algebraic-fractions-q12",
+          "prompt": "Simplify (7x + 1x)/x² for x ≠ 0",
+          "options": [
+            "8/x",
+            "7x",
+            "1/x",
+            "x/7"
+          ],
+          "answerIndex": 0,
+          "explanation": "Factor x in the numerator, cancel one x."
+        },
+        {
+          "id": "ks4-algebraic-fractions-q13",
+          "prompt": "Simplify (7x + -2x)/x² for x ≠ 0",
+          "options": [
+            "5/x",
+            "7x",
+            "-2/x",
+            "x/7"
+          ],
+          "answerIndex": 0,
+          "explanation": "Factor x in the numerator, cancel one x."
+        },
+        {
+          "id": "ks4-algebraic-fractions-q14",
+          "prompt": "13 − 10 =",
+          "options": [
+            "4",
+            "5",
+            "3",
+            "2"
+          ],
+          "answerIndex": 2,
+          "explanation": "13 minus 10 equals 3."
+        },
+        {
+          "id": "ks4-algebraic-fractions-q15",
+          "prompt": "Simplify (4x + 1x)/x² for x ≠ 0",
+          "options": [
+            "1/x",
+            "5/x",
+            "x/4",
+            "4x"
+          ],
+          "answerIndex": 1,
+          "explanation": "Factor x in the numerator, cancel one x."
+        },
+        {
+          "id": "ks4-algebraic-fractions-q16",
+          "prompt": "Simplify (4x + 0x)/x² for x ≠ 0",
+          "options": [
+            "0/x",
+            "4/x",
+            "x/4",
+            "4x"
+          ],
+          "answerIndex": 1,
+          "explanation": "Factor x in the numerator, cancel one x."
+        },
+        {
+          "id": "ks4-algebraic-fractions-q17",
+          "prompt": "Simplify (5x + 1x)/x² for x ≠ 0",
+          "options": [
+            "6/x",
+            "x/5",
+            "5x",
+            "1/x"
+          ],
+          "answerIndex": 0,
+          "explanation": "Factor x in the numerator, cancel one x."
+        },
+        {
+          "id": "ks4-algebraic-fractions-q18",
+          "prompt": "Simplify (5x + 2x)/x² for x ≠ 0",
+          "options": [
+            "7/x",
+            "x/5",
+            "5x",
+            "2/x"
+          ],
+          "answerIndex": 0,
+          "explanation": "Factor x in the numerator, cancel one x."
+        },
+        {
+          "id": "ks4-algebraic-fractions-q19",
+          "prompt": "5 + -3 =",
+          "options": [
+            "2",
+            "4",
+            "3",
+            "1"
+          ],
+          "answerIndex": 0,
+          "explanation": "5 plus -3 equals 2."
+        },
+        {
+          "id": "ks4-algebraic-fractions-q20",
+          "prompt": "Simplify (6x + 4x)/x² for x ≠ 0",
+          "options": [
+            "x/6",
+            "6x",
+            "4/x",
+            "10/x"
+          ],
+          "answerIndex": 3,
+          "explanation": "Factor x in the numerator, cancel one x."
         }
       ]
     }

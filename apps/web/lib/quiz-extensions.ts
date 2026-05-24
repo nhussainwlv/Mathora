@@ -1,3 +1,5 @@
+import { fillQuizToCount } from "./quiz-procedural.ts";
+
 type QuizQuestion = {
   id: string;
   prompt: string;
@@ -18,7 +20,7 @@ function build(id: string, items: Raw[]): QuizQuestion[] {
   }));
 }
 
-/** Seven extra questions per topic; merged with 3 base questions in ks-curriculum → 10 total. */
+/** Seven extra questions per topic; merged with 3 base in ks-curriculum, then procedural fill → 20 total. */
 export const quizExtensions: Record<string, Raw[]> = {
   "ks1-counting": [
     ["Count in 5s: 5, 10, 15, ?", ["16", "18", "20", "25"], 2, "Add 5 to 15 to get 20."],
@@ -325,5 +327,5 @@ export function buildFullQuiz(topicId: string, base: QuizQuestion[]): QuizQuesti
     ...base.map((q, i) => ({ ...q, id: `${topicId}-q${i + 1}` })),
     ...build(topicId, extra).map((q, i) => ({ ...q, id: `${topicId}-q${base.length + i + 1}` })),
   ];
-  return merged.slice(0, 10);
+  return fillQuizToCount(topicId, merged, 20);
 }

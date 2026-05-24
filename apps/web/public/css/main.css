@@ -2472,7 +2472,129 @@ html.dark .learn-diagram-svg .diagram-label-text-accent {
 .learn-quiz-meta {
   font-size: 0.9rem;
   color: var(--muted);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.learn-quiz-legend-ok {
+  color: #10b981;
+  font-weight: 600;
+}
+
+.learn-quiz-legend-bad {
+  color: #f87171;
+  font-weight: 600;
+}
+
+.learn-quiz-progress {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 0 0 0.75rem;
+  color: var(--accent);
+}
+
+.learn-quiz-score {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.learn-quiz-question {
+  margin-top: 0.75rem;
+}
+
+.learn-quiz-prompt {
+  margin: 0 0 0.5rem;
+  font-weight: 600;
+}
+
+.learn-quiz-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.learn-quiz-option {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.65rem 0.85rem;
+  border: 2px solid var(--card-border);
+  border-radius: 0.625rem;
+  background: var(--card);
+  color: var(--fg);
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease,
+    transform 0.1s ease;
+}
+
+.learn-quiz-option:hover:not(:disabled) {
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.learn-quiz-option:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.learn-quiz-option.is-picked {
+  border-color: var(--accent);
+  background: rgba(79, 70, 229, 0.12);
+}
+
+.learn-quiz-option.is-correct {
+  border-color: #10b981;
+  background: rgba(16, 185, 129, 0.18);
+  color: #ecfdf5;
+}
+
+html:not(.dark) .learn-quiz-option.is-correct {
+  color: #065f46;
+}
+
+.learn-quiz-option.is-wrong {
+  border-color: #ef4444;
+  background: rgba(239, 68, 68, 0.18);
+  color: #fef2f2;
+}
+
+html:not(.dark) .learn-quiz-option.is-wrong {
+  color: #991b1b;
+}
+
+.learn-quiz-option:disabled {
+  cursor: default;
+  opacity: 1;
+}
+
+.learn-quiz-option:disabled:not(.is-correct):not(.is-wrong) {
+  opacity: 0.55;
+}
+
+.learn-quiz-feedback {
+  margin: 0.65rem 0 0;
+  padding: 0.65rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.45;
+}
+
+.learn-quiz-feedback--ok {
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+}
+
+.learn-quiz-feedback--bad {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.35);
 }
 
 .learn-sources {
@@ -2829,6 +2951,68 @@ html.dark .landing-credit-love {
   color: var(--fg);
   font-family: inherit;
   font-size: 0.9rem;
+}
+
+.math-chat-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.math-chat-camera-btn,
+.math-chat-upload-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0;
+  cursor: pointer;
+}
+
+
+.math-chat-preview {
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 1px solid var(--card-border);
+  background: var(--card);
+}
+
+.math-chat-preview img {
+  display: block;
+  width: 100%;
+  max-height: 8rem;
+  object-fit: contain;
+  background: #0f172a;
+}
+
+.math-chat-preview-clear {
+  position: absolute;
+  top: 0.35rem;
+  right: 0.35rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  border: none;
+  border-radius: 50%;
+  background: rgba(15, 23, 42, 0.75);
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.math-chat-ocr-status {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--accent);
+  line-height: 1.4;
+}
+
+.math-chat-ocr-status--error {
+  color: #dc2626;
+}
+
+html.dark .math-chat-ocr-status--error {
+  color: #f87171;
 }
 
 /* PWA install prompt */
