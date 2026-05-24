@@ -1,5 +1,5 @@
-# Render Blueprint — connect repo: https://github.com/nhussainwlv/Mathora
-# Dashboard: New → Blueprint → select this repo (or New Web Service manually)
+# Render Blueprint — https://github.com/nhussainwlv/Mathora
+# Dashboard → New → Blueprint → connect this repo
 services:
   - type: web
     name: mathora-api
@@ -29,3 +29,10 @@ services:
         sync: false
       - key: APP_BASE_URL
         sync: false
+
+  - type: web
+    name: mathora-web
+    runtime: static
+    rootDir: apps/web
+    buildCommand: echo "Static PWA — no build step"
+    staticPublishPath: ./public

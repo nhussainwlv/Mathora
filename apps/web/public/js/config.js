@@ -16,6 +16,9 @@
     if (!apiUrl.endsWith("/api")) apiUrl = `${apiUrl}/api`;
   } else if (isLocal) {
     apiUrl = `http://${host}:4000/api`;
+  } else if (host.endsWith(".onrender.com") && !host.startsWith("mathora-api")) {
+    // Render: static site (mathora-web) → API service (mathora-api)
+    apiUrl = "https://mathora-api.onrender.com/api";
   } else {
     apiUrl = `${window.location.origin}/api`;
   }
