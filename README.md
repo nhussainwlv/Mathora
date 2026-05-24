@@ -1,72 +1,113 @@
 # Mathora
 
-Mathora is a production-oriented educational web platform for UK KS1-KS4 maths learners with gamification, adaptive revision, and role-based portals for students, teachers, admins, and parents.
+Mathora is a gamified UK maths learning platform for KS1–KS4 students — games, flashcards, Learn topics, built-in maths tutor, and progress tracking.
 
-## Tech Stack
-- **Frontend:** Static HTML, CSS, and JavaScript (installable PWA)
+**Repository:** [github.com/nhussainwlv/Mathora](https://github.com/nhussainwlv/Mathora)
+
+---
+
+## Live app (Render)
+
+| | Link |
+|---|------|
+| **Open the app** | **[https://mathora-web.onrender.com](https://mathora-web.onrender.com)** |
+| API health check | [https://mathora-api.onrender.com/health](https://mathora-api.onrender.com/health) |
+
+Click **mathora-web** to use Mathora in your browser (sign in, games, tutor, flashcards).
+
+**Demo sign-in**
+
+- Email: `student@mathora.academy`
+- Password: `Mathora123!`
+
+> Free Render services may sleep when idle — the first load can take 30–60 seconds.
+
+---
+
+## Tech stack
+
+- **Frontend:** Static HTML, CSS, JavaScript (installable PWA)
 - **Backend:** Node.js, Express, Prisma
-- **Database:** SQLite (local `apps/api/prisma/dev.db`)
-- **Auth:** JWT access + refresh sessions, Argon2 password hashing
+- **Database:** SQLite (`apps/api/prisma/dev.db`)
+- **Auth:** JWT access + refresh, Argon2 password hashing
+- **Maths tutor:** Built-in step-by-step solver (no external AI API required)
 
-## Monorepo Structure
-- `apps/web` - learner/product UI
-- `apps/api` - API server and business logic
-- `packages/types` - shared TypeScript contracts
-- `packages/ui` - shared UI components
-- `docs` - architecture docs
-- `infra` - Docker compose stack
+## Monorepo structure
 
-## Getting Started
-1. Copy env templates:
-   - `cp .env.example .env`
-   - `cp apps/api/.env.example apps/api/.env`
-   - Optional: copy `apps/web/.env.example` if you customize API URL in `public/js/config.js`
-2. Configure API env:
-   - `cp apps/api/.env.example apps/api/.env`
-3. Install dependencies:
-   - `npm install`
-4. Create SQLite database:
-   - `cd apps/api && npx prisma db push && npx prisma db seed`
-5. Run the apps:
-   - `npm run dev:api` (API on port 4000)
-   - `npm run dev:web` (UI on port 3000)
-6. Sign in as student: `student@mathora.academy` / `Mathora123!` (or create an account)
+| Path | Purpose |
+|------|---------|
+| `apps/web` | Student UI (PWA) |
+| `apps/api` | REST API |
+| `packages/types` | Shared TypeScript types |
+| `packages/ui` | Shared UI components |
+| `docs/` | Architecture & deploy guides |
+| `infra/` | Docker Compose |
 
-## Student games
+---
 
-- Each game has **Level 1 (easy)**, **Level 2 (medium)**, **Level 3 (hard)**.
-- Questions are **unlimited** (generated + large banks).
-- **Sign in** required to save solved questions to SQLite via the API.
-- **Sign out** from the header on any student page.
+## Run locally
 
-## Quick UI-only run (no saved progress)
+1. Copy env files:
+   ```bash
+   cp .env.example .env
+   cp apps/api/.env.example apps/api/.env
+   ```
+2. Install and set up the database:
+   ```bash
+   npm install
+   cd apps/api && npx prisma db push && npx prisma db seed && cd ../..
+   ```
+3. Start everything:
+   ```bash
+   npm run dev:all
+   ```
+4. Open **http://localhost:3000** and sign in with the demo account above.
+
+**UI only (no API / no saved progress):**
 
 ```bash
 npm install
 npm run dev:web
 ```
 
-Open `http://localhost:3000` — sign-in needs the API running for real accounts.
+---
 
-Also available: static demo HTML at `http://localhost:3000/demo.html`.
+## Student features
 
-## Demo Accounts
-- Admin: `admin@mathora.academy` / `Mathora123!`
-- Teacher: `teacher@mathora.academy` / `Mathora123!`
-- Student: `student@mathora.academy` / `Mathora123!`
+- **Games** — 12 modes, 4 levels, 30 questions per round, points & timer
+- **Flashcards** — 50 cards per level, favourites, animations
+- **Learn** — KS1–KS4 topics, quizzes, diagrams
+- **Maths tutor** — type questions (e.g. `x2+5x+6=0`, `(2x-2)(3x-2)=100`)
+- **Dashboard** — XP, level, accuracy, coins (when signed in)
+- **PWA** — install to home screen, offline-friendly shell
 
-## Core Features Included
-- Secure signup/signin/signout, password reset, email verification, refresh token rotation.
-- Student dashboard with XP, levels, streaks, achievements, and recommendations.
-- KS1-KS4 topic pathways with foundation/higher track modeling.
-- Flashcards with adaptive revision cues and gameplay route scaffolding.
-- Teacher/admin/parent role-specific APIs and dashboard pages.
-- PWA baseline with manifest, service worker, and offline page.
-- Docker and CI workflow for production readiness.
+## Demo accounts
 
-## Deployment
-- Frontend: Vercel
-- Backend: Render/Fly/Railway
-- Database: Managed PostgreSQL
+| Role | Email | Password |
+|------|-------|----------|
+| Student | `student@mathora.academy` | `Mathora123!` |
+| Teacher | `teacher@mathora.academy` | `Mathora123!` |
+| Admin | `admin@mathora.academy` | `Mathora123!` |
 
-Set production environment variables from `.env.example`, run `npm run build`, and deploy `apps/web` + `apps/api` as separate services.
+---
+
+## Deploy on Render
+
+Full step-by-step guide: **[docs/DEPLOY-RENDER.md](docs/DEPLOY-RENDER.md)**
+
+Summary:
+
+1. Push this repo to GitHub
+2. [Render Dashboard](https://dashboard.render.com) → **New +** → **Blueprint** → select **Mathora**
+3. Set on **mathora-api** → **Environment**:
+   - `CORS_ORIGIN` = `https://mathora-web.onrender.com`
+   - `APP_BASE_URL` = `https://mathora-web.onrender.com`
+4. Open **[https://mathora-web.onrender.com](https://mathora-web.onrender.com)**
+
+Config files: `render.yaml` (API + static site), `apps/web/public/js/config.js` (API URL on Render).
+
+---
+
+## Built by
+
+**Built with love by [@Adrian](https://www.instagram.com/adrianjamesash/)**
