@@ -38,8 +38,14 @@
         <a href="#how-it-works">How it works</a>
       </nav>
       <div class="landing-nav-actions">
-        <button type="button" class="theme-toggle theme-toggle-landing" onclick="toggleTheme()" data-theme-label>
-          Dark mode
+        <button
+          type="button"
+          class="theme-toggle theme-toggle-landing"
+          onclick="toggleTheme()"
+          aria-label="Toggle light or dark mode"
+        >
+          <span class="theme-toggle-icon" aria-hidden="true"></span>
+          <span data-theme-label>Dark mode</span>
         </button>
         <a class="btn btn-outline btn-sm landing-nav-signin" href="/auth/signin.html">Sign in</a>
         <a class="btn btn-primary btn-sm" href="/auth/signup.html">Get started</a>

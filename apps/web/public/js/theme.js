@@ -23,6 +23,9 @@ function paintAllFlashcards() {
   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   const dark = stored === "dark" || (!stored && prefersDark);
   document.documentElement.classList.toggle("dark", dark);
+  document.querySelectorAll("[data-theme-label]").forEach((el) => {
+    el.textContent = dark ? "Light mode" : "Dark mode";
+  });
   requestAnimationFrame(paintAllFlashcards);
 })();
 
