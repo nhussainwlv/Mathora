@@ -11,8 +11,8 @@ services:
       cd apps/api &&
       npx prisma generate &&
       npx prisma db push &&
-      npx prisma db seed
-    startCommand: npm run start --workspace api
+      (npx prisma db seed || true)
+    startCommand: cd apps/api && npm run start
     healthCheckPath: /health
     envVars:
       - key: NODE_ENV
